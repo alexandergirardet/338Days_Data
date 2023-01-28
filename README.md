@@ -17,7 +17,7 @@ To accomplish this goal, the challenge will consist of several feats including:
 * Reading and summarizing 48 research papers (1 per week)
 * Writing 48 articles (1 per week)
 
-I recognize that working a full-time job will make this challenge more difficult, but it also provides me with the added benefit of being immersed in the world of tech and surrounded by those who are more proficient in these areas, from whom I can learn. I plan to use the techniques and tools outlined by Tiago Forte's Building a Second Brain for my time management, note-taking, and information organization strategy to help me stay on track.
+I recognize that working a full-time job will make this challenge more difficult, but it also provides me with the added benefit of being immersed in the world of tech and surrounded by those who are more proficient in these areas, from whom I can learn. I plan to use the techniques and tools outlined by Tiago Forte's [Building a Second Brain] (https://github.com/alexandergirardet/Book_Summaries/blob/main/Building_a_Second_Brain.pdf) for my time management, note-taking, and information organization strategy to help me stay on track.
 
 ## Outline
 This will be subject to change.
