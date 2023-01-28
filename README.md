@@ -46,6 +46,7 @@ Certificate  | Status of Completion | Proof
 Google Associate Cloud Engineer  | | 
 Google Cloud Professional Data Engineer | | 
 Google Cloud Professional Machine Learning Engineer  | | 
+Stanford Course in Mathematical Thinking  | | 
 
 ### Bootcamps
 
