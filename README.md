@@ -40,7 +40,6 @@ UK Real Estate Dashboard  | Data Engineering |
 Finance NLP analyst  | NLP and ML Engineering | 
 
 ### Certificates
-<center>
   
 Certificate  | Status of Completion | Proof
 ------------- | ------------- | -------------
@@ -48,7 +47,6 @@ Google Associate Cloud Engineer  | :construction: |
 Google Cloud Professional Data Engineer | | 
 Google Cloud Professional Machine Learning Engineer  | | 
 Stanford Course in Mathematical Thinking  | :construction: | 
-</center>
 
 ### Bootcamps
 
