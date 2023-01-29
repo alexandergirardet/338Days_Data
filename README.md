@@ -26,10 +26,10 @@ This will be subject to change.
 
 Books  | Status of Completion
 ------------- | -------------
-Mathematics for Machine Learning  | 
-Hands On Machine Learning with Scikit Learn, Keras and TensorFlow  | 
+Mathematics for Machine Learning  | :construction:
+Hands On Machine Learning with Scikit Learn, Keras and TensorFlow | 
 Speech and Language Processing | 
-Designing Data-Intensive Applications | 
+Designing Data-Intensive Applications | :construction:
 Machine Learning Engineering | 
 
 ### Projects
@@ -43,10 +43,10 @@ Finance NLP analyst  | NLP and ML Engineering |
 
 Certificate  | Status of Completion | Proof
 ------------- | ------------- | -------------
-Google Associate Cloud Engineer  | | 
+Google Associate Cloud Engineer  | :construction: | 
 Google Cloud Professional Data Engineer | | 
 Google Cloud Professional Machine Learning Engineer  | | 
-Stanford Course in Mathematical Thinking  | | 
+Stanford Course in Mathematical Thinking  | :construction: | 
 
 ### Bootcamps
 
