@@ -106,5 +106,5 @@ To understand Kubernetes you have to first understand the rise of Agile software
 
 ### Day 6
 
-Passed the ACE exam.
+Passed the ACE exam. Began working on the real estate project.
 
