@@ -103,3 +103,8 @@ To understand Kubernetes you have to first understand the rise of Agile software
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Kubernetes.pdf)**
 
 **Content:** Cloud Guru Google Certified Associate Cloud Engineer course and Kubernetes
+
+### Day 6
+
+Passed the ACE exam.
+
