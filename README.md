@@ -126,7 +126,7 @@ SSTables are more efficient in merging segments, they do not require all keys to
 
 Due to the length of this chapter I will break it down overall several days.
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Chapter_3_-_Design_Scalable_systems.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Chapter_3_-_Design_scalable_systems.pdf)**
 
 **Content:** Designing Data-Intensive Applications
 
