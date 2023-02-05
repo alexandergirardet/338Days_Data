@@ -106,5 +106,29 @@ To understand Kubernetes you have to first understand the rise of Agile software
 
 ### Day 6
 
-Passed the ACE exam. Began working on the real estate project.
+I successfully passed my Associate Cloud Engineer Exam. I will, in the future provide a summary as an article piece on how I passed it, and what concepts are important to know. Today's topic will regard the concept of databases and how data is indexed, and stored under the hood. Fundamentally, a database needs to do two things. When you give it data, it should store it, and when you ask for it back it should retrieve it efficiently. To achieve these seemingly simple functions, there have been many algorithms and methods invented.
+
+The most simple database is a log based one, which is an append-only sequence of records, this is the quickest method for writing data due to the simplicity of the operation. Indexing is an additional structure on top of the primary data which enables efficient searches. It can drastically accelerate read times, but slow down write times. Hash indexes, are used for key-value data, this means when given a key it will store it and return the value. The Hash table is a popular data structures used for key-value look-up and work by converting the key into an integer and remapping it to an index to reduce storage space. The hash index keeps an in-memory hash map where each key is mapped to a byte offset in the data file where the value can be found. Appending a key-value pair updates the hash map to reflect the offset of the written data. 
+
+Segmentation, involves breaking the log into segments of a certain size and then compacting the segments by removing duplicate historical keys and keeping only the most updated ones. The point of segmentation in databases is to improve the performance, scalability and manageability of the database by dividing it into smaller, more manageable parts called segments. Segmentation helps to reduce the amount of I/O needed to access data, decrease contention for database resources, and simplify the administration and maintenance of the database. Additionally, segmentation can also provide better data security and privacy by allowing administrators to enforce access control on a segment-by-segment basis.
+
+There are some implementation problems with hash indexes, including file format, deleting records, crash recovery, partially written records, and concurrency control. There are advantages of the append-only design, including faster speeds, easier concurrency and crash recovery, and removing the problem of data files being fragmented over time. The disadvantages include the need for the hash table to fit in memory and inefficiency in range queries.
+
+SSTables, is a database design where the sequence of key-value pairs is sorted by key, they are very common in NoSQL databases. The point of SSTables is to provide a fast and efficient way to store large amounts of data on disk in a way that can be easily accessed and queried. They are designed to be highly optimized for read-heavy workloads, providing fast access times for large amounts of data, even on disk-based storage systems. They achieve this by using a number of techniques, including:
+
+  Sorting: The data in an SSTable is stored in sorted order, which allows for efficient indexing and searching.
+
+  Compression: SSTables use efficient compression algorithms to reduce the size of the data on disk, which reduces disk I/O and improves access times.
+
+  Immutable: SSTables are designed to be immutable, meaning once data is written to an SSTable it cannot be modified. This allows for efficient compaction   and garbage collection, which helps to keep the size of the SSTables manageable.
+
+SSTables are more efficient in merging segments, they do not require all keys to be kept in memory, and allow for more efficient range queries. However, you cannot immediately append new key-value pairs to the segment as writes can occur in any order. 
+
+Due to the length of this chapter I will break it down overall several days.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Chapter_3_-_Design_Scalable_systems.pdf)**
+
+**Content:** Designing Data-Intensive Applications
+
+
 
