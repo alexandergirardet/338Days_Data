@@ -36,14 +36,14 @@ Machine Learning Engineering |
 
 Books  | Field | Status of Completion
 ------------- | ------------- | -------------
-UK Real Estate Dashboard  | Data Engineering | 
+UK Real Estate Dashboard  | Data Engineering | :construction:
 Finance NLP analyst  | NLP and ML Engineering | 
 
 ### Certificates
   
 Certificate  | Status of Completion | Proof
 ------------- | ------------- | -------------
-Google Associate Cloud Engineer  | :construction: | 
+Google Associate Cloud Engineer  | :white_check_mark: | 
 Google Cloud Professional Data Engineer | | 
 Google Cloud Professional Machine Learning Engineer  | | 
 Stanford Course in Mathematical Thinking  | :construction: | 
@@ -52,7 +52,7 @@ Stanford Course in Mathematical Thinking  | :construction: |
 
 Bootcamp  | Status of Completion
 ------------- | -------------
-Data Engineering Zoomcamp  | 
+Data Engineering Zoomcamp  | :construction:
 Machine Learning Zoomcamp  | 
 
 ### Research Papers
