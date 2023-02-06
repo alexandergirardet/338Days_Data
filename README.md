@@ -133,5 +133,15 @@ Due to the length of this chapter I will break it down overall several days.
 
 **Content:** Designing Data-Intensive Applications
 
+### Day 7
+
+**Topic:** Docker
+
+As I began working through the Data Engineering Zoomcamp the first topic to come up is Docker and it's use in developing, testing and deploying apps or pipelines. Docker aims to solve the problem of Portability in creating software applications. It enables developers to create, deploy and run applications in standardized and isolated environments. This makes it easier to develop, test, and deploy applications across different environments, ensuring compatibility and consistency of results. The main components of Docker are Docker Client, Docker Daemon, Docker Registry, Docker Engine, Docker Images, and Docker Containers. The Docker Client is the CLI that allows users to interact with the Docker Daemon, build images, and run and manage containers. The Docker Daemon is the core component of the architecture that runs on the host machine, responsible for building images, running containers and managing them. The Docker Registry is where images are stored and can be retrieved by the Docker Client. There are public and private registries such as Docker Hub and Google Container Registry. The Docker Engine is the software that runs on the host machine and provides an interface between the Docker Daemon and the client. The Docker Images are the building blocks of containers and include everything needed to run an application, including code, runtime, system tools, libraries and settings. The Docker Containers are instances of Docker Images that run as isolated processes on the host machine, each with their own file system, networking and resources. In today's course I have created several docker containers that share a network and can communicate with eachother, leading me to the concept of docker compose files. Docker compose files are useful in creating multi-container applications. For example, one container can run a postgres database while another can run PgAdmin (a GUI for managing docker containers). These containers can use the shared network to communicate with eachother so that I can simultaneously interact with the database and monitor it using PgAdmin. 
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Chapter_3_-_Design_scalable_systems.pdf)**
+
+**Content:** Data Engineering Zoomcamp
+
 
 
