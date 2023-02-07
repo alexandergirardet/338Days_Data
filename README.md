@@ -60,13 +60,13 @@ Machine Learning Zoomcamp  |
 
 ### Research Papers
 
-Paper  | Week #
+Paper  | #
 ------------- | -------------
 Paper Name | 1
 
 ### Articles
 
-Article  | Week # 
+Article  | # 
 ------------- | -------------
 Article Name  | 1
 
