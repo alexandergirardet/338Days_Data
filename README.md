@@ -143,7 +143,7 @@ As I began working through the Data Engineering Zoomcamp the first topic to come
 
 **Content:** Data Engineering Zoomcamp
 
-### Day 7
+### Day 8
 
 **Topic:** Terraform
 
