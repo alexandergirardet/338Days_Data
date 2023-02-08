@@ -143,5 +143,15 @@ As I began working through the Data Engineering Zoomcamp the first topic to come
 
 **Content:** Data Engineering Zoomcamp
 
+### Day 7
+
+**Topic:** Terraform
+
+Working with cloud infrastructure means you are essentially working with virtualized servers far away from your local host. However for your apps to run as anticipated you have to configure these servers in a way that matches your security, hardware and networking needs. This requires a lot of maintaince, surveillance and most importantly preparation. Google Cloud, AWS and Azure provide you with relatively sleek and intuitive UI to adjust your environments. However for a production application which requires a lot of testing, through sandbox and development environments, as well as trying to ensure that your data system respects the concepts of scalibility, maintainability, and reliability. Continuously going through the same process of clicking around on the UI to match your environment configurations is not a good and long term solution. Where is the version control? Or how can you quickly share your environment specs to other developers. This is where Terraform and the concept of Infrastructure as Code comes in or IaC. It is an open source Iac tool that allows you to provision, build and version infrastructure resources in a safe and collaborative manner. Through a series of plugins Terraform can connect to Azure, AWS, and GCP cloud providers, as well as others. Terraform is fairly simple as it is well designed and includes declarative coding conventions using the hashicorp configuration language which is similar to JSON. Declarative code means that you essentially declare what you wish the end state of your app to be, and the compiler will find a way to create that state. In the case of Terraform you declare your wanted state in the main.tf file, as well as provide access to your environment, and tf will use it's backend where it stores the current state of your infrastructure, and will compare and contrast the previous infra to your future declared version and will figure out what changes need to be made to reach it. 
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Terraform.pdf)**
+
+**Content:** Data Engineering Zoomcamp
+
 
 
