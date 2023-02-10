@@ -170,4 +170,15 @@ Data can be stored in a database in either row-based or column-based formats. Th
 
 **Content:** Data Engineering Zoomcamp
 
+### Day 10
+
+**Topic:** Airflow
+
+Workflow orchestration refers to the management and coordination of dependencies between functions in large and complex applications or workflows. The goal of workflow orchestration is to improve the efficiency, reliability, and scalability of data pipelines, as well as to provide an intuitive way to visualize workflows and trigger jobs based on the completion of previous necessary jobs. Additionally, it helps with monitoring and collaboration. An example workflow can be seen as a Directed Acyclic Graph (DAG), which is a visual representation of the relationships between tasks in the workflow and the execution order, including dependencies. Airflow is an Apache open-source framework for workflow orchestration, created by Airbnb, to help solve problems with managing large and complex workflows. The architecture of Airflow consists of a Web Server, a Scheduler, Workers, a Database, and Task Definitions. The Web Server provides a graphical user interface to manage and visualize workflows, trigger DAGs, and view logs and status updates. The Scheduler is responsible for scheduling and triggering tasks in the workflow, and keeping track of task dependencies. Workers are the nodes that perform the required work as defined by Airflow. The Database stores information about the workflow, including task state, execution dates, and task logs. Task Definitions define the individual tasks that can make up the workflow, and can be written in python or any other language. The backend database used by Airflow can be SQLite for local and testing environment tasks, but for production tasks, PostgreSQL is recommended. Redis is used as a distributed cache to share information across a cluster of Airflow workers and as a message queue to handle pub/sub messaging. The CeleryExecutor is a type of executor that allows tasks to be run in parallel on a group of worker nodes and is designed to scale the number of nodes horizontally. To set up Airflow, you will need to store your Google Cloud Platform service account file in the Home directory and upgrade your Docker Compose version, setting the minimum memory for your Docker engine to 5GB. To install Airflow, you can choose to use Docker or pip. If using Docker, you will need to know how to use Docker Compose, as it relies on several containers. If using pip, you can install Airflow and its dependencies directly into your Python environment.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Airflow.pdf)**
+
+**Content:** Data Engineering Zoomcamp
+
+
 
