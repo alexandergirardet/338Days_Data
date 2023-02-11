@@ -180,5 +180,15 @@ Workflow orchestration refers to the management and coordination of dependencies
 
 **Content:** Data Engineering Zoomcamp
 
+### Day 11
+
+**Topic:** BigQuery
+
+BigQuery is a data warehouse solution offered by Google Cloud Platform (GCP) that is designed to handle very large datasets at a scale of petabytes and to perform high-speed querying. The service is fully managed and serverless, meaning that users do not have to worry about the management of underlying infrastructure or operations. BigQuery tables are stored in a column-oriented format, which is efficient for high-read throughput and allows for quick analysis of data. BigQuery uses a micro-service architecture to allocate storage and processing resources based on usage patterns, which helps to optimize performance and cost efficiency. One key feature of BigQuery is that it supports SQL queries and provides a query service for querying native tables. Data can also be queried from external sources, referred to as federated queries, and a query job can also write to a destination table. BigQuery provides a query validator with a pricing calculator that can be used to estimate costs. BigQuery pricing is based on two models: analysis pricing and storage pricing. Analysis pricing covers the cost of processing queries, including SQL queries, user-defined functions, scripts, and certain data manipulation language (DML) and data definition language (DDL) statements. Storage pricing covers the cost of storing data that has been loaded into BigQuery. The amount of data processed is based on the columns selected and the types of data in the column. BigQuery datasets are organized into units called datasets and are referred to as project.dataset.table. Datasets belong to a project and IAM permissions are required to submit a job to the service. BigQuery datasets can be multi-regional, and every table has a schema that can be entered manually or by supplying a JSON file. Access control is managed through IAM and is configurable at the dataset, table, view, or column level. Additionally, BigQuery provides predefined roles for controlling access to resources and row-level security can be used to create a row access policy. Sharing datasets with other analysts is simple, and an authorized view can be created to share query results with a particular group without giving them access to the underlying data. BigQuery slots are a combination of CPU, memory, and networking resources that are allocated to queries based on intensity. You have access to up to 2000 concurrent slots, which are shared among all queries in a single project. BigQuery uses a columnar data structure, so charges are based on the total data processed in the columns selected. You are not charged for queries that return an error or for queries that retrieve results from the cache. Canceling a running query job might incur charges up to the full cost for the query.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/tree/main/Notes/Data_engineering_bootcamp/Data_Lakes_and_Data_Warehousing.pdf)**
+
+**Content:** Data Engineering Zoomcamp
+
 
 
