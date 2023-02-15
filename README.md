@@ -168,7 +168,7 @@ Data can be stored in a database in either row-based or column-based formats. Th
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DDIA/Chapter_3_-_Design_scalable_systems.pdf)**
 
-**Content:** Data Engineering Zoomcamp
+**Content:** Designing Data-Intensive Applications
 
 ### Day 10
 
@@ -199,4 +199,12 @@ A general-purpose processor is a CPU capable of executing a variety of instructi
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Computer_science/Operating_systems.pdf)**
 
 **Content:** Operating systems course
+
+### Day 13
+
+**Topic:** DDIA Chapter 4 #1 - Encoding
+
+Forward and backward compatibility are essential for building systems that can handle changes to an application over time. When applications evolve, the changes often affect the data, so systems must be able to handle the compatibility of the data between older and newer versions of the application. To achieve forward and backward compatibility, data engineers use encoding and decoding to translate data between in-memory representation and byte sequences. Encoding is the process of converting in-memory objects into a self-contained sequence of bytes, while decoding is the process of converting byte sequences back into in-memory objects. There are various encoding formats available, including language-specific formats like pickle for Python, as well as standardized encodings like JSON, XML, and Binary. Each format has its pros and cons, and the chapter covers them in detail. To address backward and forward compatibility, standardized encodings like Thrift, Protocol Buffers, and Avro use a schema to encode data. These encodings do not include field names in the schema and instead use field tags, which act as aliases for fields. Field tags are crucial to maintaining backward and forward compatibility, even with schema changes. Avro handles schema evolution by allowing the writer's and reader's schema to be different but compatible. The Avro library resolves any differences between the two schemas by comparing them side-by-side. Data flow can happen through different modes, including databases, REST, and RPC. For example, in data flow through databases, backward and forward compatibility is essential, as older and newer versions of the application might access the same database.
+
+**Content:** Designing Data-Intensive Applications
 
