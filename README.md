@@ -211,3 +211,11 @@ Forward and backward compatibility are essential for building systems that can h
 
 **Content:** Designing Data-Intensive Applications
 
+### Day 14 
+
+**Topic:** Airflow project walkthrough
+
+
+**[Project](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DDIA/Chapter_4_-_Design_Scalable_systems.pdf)**
+
+**Content:** Airflow, Terraform, Docker, Docker-compose
