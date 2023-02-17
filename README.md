@@ -214,8 +214,6 @@ Forward and backward compatibility are essential for building systems that can h
 
 **Topic:** Airflow project walkthrough
 
-**Content:** Airflow, Terraform, Docker, Docker-compose
-
 This project makes use of 3 tools and technologies. Terraform, Airflow, and Docker. The purpose of this project is to create an orchestrated pipeline that will extract data from the web, stage it, process and transform it in a Google Cloud Storage bucket, and then upload it to BigQuery for analysis. Reliability, scalability and maintainability are the primary design concerns when creating data piplines. Using Terraform as our cloud infrastructure as code solution ensures that our cloud configurations can benefit from version control, and [ Insert more information here about terraform ]. Airflow enables us to handle task dependencies in a scalable fashion making use of Dags, an example of it's usefulness in this project is the creation of a BigQuery table prior to loading the data into it. Docker provides us with an isolated environment where we can manage our environment variables such as google cloud credentials, and handles dependencies for airflow as well as provides an internal network for the webserver, postgres database and scheduler to communicate. 
 
 **Workflow**
@@ -236,3 +234,5 @@ Terraform is used in this case to provision our Google cloud bucket, and create 
 Within our airflow setup we make use of one dag that contains four tasks in our workflow. The extract_data_task makes use of curl and downloads the dataset to a temporary folder within our scheduler. Once this process is complete, the upload_to_gcs_task, initializes the storage client, and sends the file from the temporary folder to our bucket as specified in our airflow variables. The create_table_task will then create a BigQuery table making use of the BigQueryCreateEmptyTableOperator, and finally upload_to_bq_task uses the GCSToBigQueryOperator to upload the GCS file to BigQuery. It is worth noting that both BigQuery operators required an airflow connection, which is an abstraction of airflow [Look into airflow connections]. In all this project served as a good introduction to the uses and synergies of airflow, terraform and Docker.
 
 **[Project](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DDIA/Chapter_4_-_Design_Scalable_systems.pdf)**
+
+**Content:** Airflow, Terraform, Docker, Docker-compose
