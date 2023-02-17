@@ -233,6 +233,6 @@ Terraform is used in this case to provision our Google cloud bucket, and create 
 
 Within our airflow setup we make use of one dag that contains four tasks in our workflow. The extract_data_task makes use of curl and downloads the dataset to a temporary folder within our scheduler. Once this process is complete, the upload_to_gcs_task, initializes the storage client, and sends the file from the temporary folder to our bucket as specified in our airflow variables. The create_table_task will then create a BigQuery table making use of the BigQueryCreateEmptyTableOperator, and finally upload_to_bq_task uses the GCSToBigQueryOperator to upload the GCS file to BigQuery. It is worth noting that both BigQuery operators required an airflow connection, which is an abstraction of airflow [Look into airflow connections]. In all this project served as a good introduction to the uses and synergies of airflow, terraform and Docker.
 
-**[Project](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DDIA/Chapter_4_-_Design_Scalable_systems.pdf)**
+**[Project](https://github.com/alexandergirardet/training-projects/tree/main/airflow)**
 
 **Content:** Airflow, Terraform, Docker, Docker-compose
