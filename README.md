@@ -259,18 +259,7 @@ Working in a very large 80 billion dollar company as a data engineer comes with 
 <p align="center">
   <img width="800" height="400" src="https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/static/de_lifecycle.png">
 </p>
-The lifecycle concerns itself with ingesting data from source and storing it, and then transforming it so that it can be ready for it's final goal of serving it. Storage can occur at many stages within the lifecycle. Additionally, undercurrents are core components to the cycle that enable the data engineering lifecycle to function properly within an industrial production environment. In follow up posts, I will go through each stage and undercurrent one by one. Including:
-* Generation
-* Storage
-* Ingestion
-* Transformation
-* Serving
-* Security
-* Data Management / DataOps
-* Data Architecture
-* Orchestration
-* Software Engineering
-
+The lifecycle concerns itself with ingesting data from source and storing it, and then transforming it so that it can be ready for it's final goal of serving it. Storage can occur at many stages within the lifecycle. Additionally, undercurrents are core components to the cycle that enable the data engineering lifecycle to function properly within an industrial production environment. In follow up posts, I will go through each stage and undercurrent highlighted in the image one by one.
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_2.pdf)**
 
