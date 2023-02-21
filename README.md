@@ -256,7 +256,20 @@ Mathematics is a field that has been built upon itself, with each new idea and d
 **Topic:** The data engineering lifecycle
 
 Working in a very large 80 billion dollar company as a data engineer comes with it's benefits, but also (for the short term) it's downsides. On one side you are exposed to the data lifecycle, and how a company applies it in it's everyday workflows and enables better data driven decision making. You also get to work alongside with people that have many more years experience than you. On the other hand however, the company is so vast that getting a clear picture of exactly how you are creating value and where you inputs lie within the data value add chain is very difficult. For this reason I have started to read the Fundamentals of Data Engineering book published by O'Reilly. I believed this book, combined with DDIA, and the data engineering zoomcamp will serve as a good basis for my understanding in DE practices. The central theme of the book revolves around the Data engineering life cycle, which is itself a subset of the data lifecycle (We will get to this through a later book). The lifecycle comprises stages that turn raw data ingredients into useful data products ready for consumption. The author puts forth the idea that as many of the DE technical complexities are abstracted away, DE will shift to data lifecycle engineers and therefore need a higher level view. 
-
+<p align="center">
+  <img width="800" height="400" src="https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/static/de_lifecycle.png">
+</p>
+The lifecycle concerns itself with ingesting data from source and storing it, and then transforming it so that it can be ready for it's final goal of serving it. Storage can occur at many stages within the lifecycle. Additionally, undercurrents are core components to the cycle that enable the data engineering lifecycle to function properly within an industrial production environment. In follow up posts, I will go through each stage and undercurrent one by one. Including:
+* Generation
+* Storage
+* Ingestion
+* Transformation
+* Serving
+* Security
+* Data Management / DataOps
+* Data Architecture
+* Orchestration
+* Software Engineering
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_2.pdf)**
 
