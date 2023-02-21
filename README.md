@@ -271,6 +271,7 @@ The lifecycle concerns itself with ingesting data from source and storing it, an
 * Orchestration
 * Software Engineering
 
+
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_2.pdf)**
 
 **Content:** Fundamentals of Data Engineering
