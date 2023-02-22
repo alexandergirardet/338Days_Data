@@ -71,7 +71,7 @@ Paper Name | 1
 
 Article  | # 
 ------------- | -------------
-How I passed the Associate Cloud Engineer Exam | 1
+How I passed the Associate Cloud Engineer Exam | 
 
 
 # Journal
