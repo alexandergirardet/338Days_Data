@@ -1,5 +1,5 @@
 # 338Days_Data
-This is my 338 day learning journey in AI, Maths, and Data Engineering.
+This is my 338 day learning journey in AI, Maths, and Data Engineering. Everyday I will learn new concepts and integrate it into a note taking app. Over time I will post about 338 topics and concepts that I will relate to eachother through projects, use cases and high level concepts. 
 
 ## Acknowledgments
 To my Grandfather Frank Hieber who serves as an inspiration in my life, always promoting acquiring knowledge through self education. 
