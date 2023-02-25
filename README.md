@@ -45,6 +45,8 @@ UK Real Estate Dashboard  | Data Engineering | :construction:
 Finance NLP analyst  | NLP and ML Engineering | 
 [Airflow project](https://github.com/alexandergirardet/training-projects/tree/main/airflow) | Orchestration and Docker | :white_check_mark:
 
+Finance NLP analyst  | NLP and ML Engineering | 
+
 ### Certificates
   
 Certificate  | Status of Completion | Proof
