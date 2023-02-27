@@ -270,11 +270,11 @@ The lifecycle concerns itself with ingesting data from source and storing it, an
 
 ### Day 17
 
-**Topic:** Data Management
+**Topic:** Data architecture
 
-Data management relates to the concept of improving business processes along with data usage for making better decisions in a company and underpining their core functions. 
+Data architecture is a subset of enterprise architecture, which involves analyzing, designing, planning, and implementing a comprehensive framework of an organization's IT and business strategies. The primary objective of enterprise architecture is to ensure that an organization's IT and business strategies are aligned and support each other. Enterprise architecture involves flexible and reversible decisions that allow an organization to adjust its course as the world changes and gather new information. It also involves change management and breaking large initiatives down into smaller changes, with each one being a reversible decision in itself. Trade-offs are inevitable in the engineering space, and data engineers must account for them at every step of the design stage while minimizing high-interest technical debt. Data architecture is the design of systems to support the evolving data needs of an enterprise, achieved by flexible and reversible decisions reached through careful evaluation of trade-offs. There are two components of data architecture, operational architecture, and technical architecture. Operational architecture encompasses the functional requirements of what needs to happen, while technical architecture outlines how data is ingested, stored, transformed, and served along the data engineering lifecycle. Good data architecture serves business requirements with a common, widely reusable set of business blocks while maintaining flexibility and making appropriate trade-offs. Bad architecture, on the other hand, is authoritarian and tries to cram a bunch of one size fits all decisions into a big ball of mud. A big ball of mud is used to describe a system or application that is complex, disorganized, and difficult to maintain or change. It is typically the result of years of ad-hoc development, where decisions are made on the fly and without a clear architecture plan. Therefore, agility is the foundation for good data architecture, which acknowledges that the world is fluid. Bad data architecture, on the other hand, is tightly coupled, rigid, overly centralized, or uses the wrong tools for the job, hampering development and change management. I
 
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_2.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
 **Content:** Fundamentals of Data Engineering
