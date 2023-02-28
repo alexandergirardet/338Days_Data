@@ -282,10 +282,37 @@ Data architecture is a subset of enterprise architecture, which involves analyzi
 
 ### Day 17
 
-**Topic:** Data architecture
+**Topic:** Data architecture principles
 
-Data architecture is a subset of enterprise architecture, which involves analyzing, designing, planning, and implementing a comprehensive framework of an organization's IT and business strategies. The primary objective of enterprise architecture is to ensure that an organization's IT and business strategies are aligned and support each other. Enterprise architecture involves flexible and reversible decisions that allow an organization to adjust its course as the world changes and gather new information. It also involves change management and breaking large initiatives down into smaller changes, with each one being a reversible decision in itself. Trade-offs are inevitable in the engineering space, and data engineers must account for them at every step of the design stage while minimizing high-interest technical debt. Data architecture is the design of systems to support the evolving data needs of an enterprise, achieved by flexible and reversible decisions reached through careful evaluation of trade-offs. There are two components of data architecture, operational architecture, and technical architecture. Operational architecture encompasses the functional requirements of what needs to happen, while technical architecture outlines how data is ingested, stored, transformed, and served along the data engineering lifecycle. Good data architecture serves business requirements with a common, widely reusable set of business blocks while maintaining flexibility and making appropriate trade-offs. Bad architecture, on the other hand, is authoritarian and tries to cram a bunch of one size fits all decisions into a big ball of mud. A big ball of mud is used to describe a system or application that is complex, disorganized, and difficult to maintain or change. It is typically the result of years of ad-hoc development, where decisions are made on the fly and without a clear architecture plan. Therefore, agility is the foundation for good data architecture, which acknowledges that the world is fluid. Bad data architecture, on the other hand, is tightly coupled, rigid, overly centralized, or uses the wrong tools for the job, hampering development and change management.
+The principles for good data architecture outline in the book are:
 
+1. Choose common components wisely
+2. Plan for failure
+3. Architect for scalability
+4. Architecture is leadership
+5. Always be architecting 
+6. Build loosely coupled systems
+7. Make reversible decisions
+8. Prioritize security 
+9. Embrace FinOps
+
+**Choose common components wisely:** Common components are anything that has broad applicability within an organization. Choosing common components that can faciliate team collaboration, and break down silos will enable agility within teams. They must also support robust permissions and security to enable sharing of assets among teams.
+
+**Plan for failure:** Even though modern hardware is highly robust and durable the saying goes "Everything fails, all the time". Consider failures in your design and look into the concepts of Reliability, availability, recovery time objective and recovery point objective.
+
+**Architect for scalability:** One of the three main concerns mentioned in DDIA, make sure you systems have the ability to scale up and down. This is also known as elastic systems that can scale dynamically in response to load in an automated fashion.
+
+**Architecture is leadership:** Data architects should be highly technically competent, but be able to delegate work to others. You should be able to mentor current data engineers, make careful decisions in relation to business context and train engineers in best practices.
+
+**Always be architecting:** Data architects don't simply maintain the existing states, instead they constantly design new and exciting things in response to changes in business and technology. Develop deep knowledge of the current architecture, develop a target architecture and map out a sequencing plan to determine priorities to get there.
+
+**Build loosely coupled systems:** The architecture of the system should be designed to enable teams to test, deploy and change systems without dependencies on other teams. The Bezos API mandate was a watershed moment for Amazon as it put data and services behind APIs which enabled loose coupling of business functions. 
+
+**Make reversible decisions:** With a rapidly shifting data landscape it is important to aim for reversible decisions as they simplify your architecture and keep it agile. 
+
+**Prioritize security:** Assume responsibility for the security of the system you build and maintain. Data engineers should consider themselves security engineers. 
+
+**Embrace FinOps:** Data Engineers need to embrace financial management in cloud environments as it they are more reflective of pay as you go approaches. In this monitoring should be emphasized.
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
