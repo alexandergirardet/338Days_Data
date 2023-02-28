@@ -280,7 +280,7 @@ Data architecture is a subset of enterprise architecture, which involves analyzi
 **Content:** Fundamentals of Data Engineering
 
 
-### Day 17
+### Day 18
 
 **Topic:** Data architecture principles
 
