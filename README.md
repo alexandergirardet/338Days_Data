@@ -326,3 +326,43 @@ The main goal of all architecture concepts is to take data and transform it into
 
 **Content:** Fundamentals of Data Engineering
 
+### Day 20
+
+**Topic:** Data architecture examples
+
+Due to the abstract nature of data architecture, reasoning by example is helpful as it allows us to develop a deeper understanding of the concepts by relating to real life use cases. 
+
+Data Warehouse
+A data warehouse is a central hub used for reporting and analysis. It is highly structured and formatted for analytics use cases. A data warehouse is defined as a subject-oriented, integrated, nonvolatile, and time-variant collection of data in support of management's decisions. Data warehouses are designed to be subject-oriented, integrated, non-volatile, and time-variant. Organizational data warehouse architecture separates online analytical processing from production databases and centralizes and organizes data. Technical data warehouse architecture, on the other hand, reflects the technical nature of the data warehouse. There are two primary ways to load data into a warehouse: ETL and ELT. ETL transforms the data before arriving in the warehouse, while ELT takes advantage of the separation between storage and compute. Previously, compute and storage in data warehouses were tightly coupled, leading to competition of resources. Separating compute and storage means that companies can scale their storage and compute independently of each other. It also reduces the I/O bottlenecks when processing and storing data on the same servers.
+
+Data Marts
+A data mart is a more refined subset of a warehouse designed to serve analytics and reporting focused on a sub-organization.
+
+Data Lake
+A data lake is a centralized repository that can store raw, unprocessed data in its native format. Data lakes enable organizations to store and process data in its unaltered format from multiple sources. Initially started with Hadoop Distributed File System, data lakes quickly became dumping grounds for data, leading to the emergence of data lakehouses.
+
+Data Lakehouses
+Data lakehouses aim to combine the advantages of data warehouses with the advantages of data lakes. The lakehouse approach provides a platform that incorporates the controls, data management, and structures found in data warehouses while still storing data in object storage and supporting a variety of query and transformation engines.
+
+Modern Data Stack
+The modern data stack makes use of cloud-based, plug-and-play, easy-to-use, off-the-shelf components to create a modular and cost-effective data architecture. These components include data pipelines, storage, transformation, data management/governance, monitoring, visualization, and exploration.
+
+Lambda Architecture
+Data engineers wanted a way to combine batch processing and stream processing in a single architecture, as there were scenarios where real-time analysis was needed as well as long-term analysis of the data was relevant. This led to the creation of the Lambda architecture.
+
+Kappa Architecture
+This architecture lies on the thesis of using streaming processing as the backbone for all data handling-ingestion, storage, and serving. Real-time and batch processing can be applied seamlessly to the same data by reading the live event stream directly and replaying large chunks of data for batch processing.
+
+The Dataflow Model and Unified Batch and Streaming
+The dataflow model and the Apache Beam framework allow for unifying code paths. The core idea is to view all data as events, as the aggregation is performed over various types of windows. Real-time and batch processing happen in the same systems using nearly identical code.
+
+Architecture for IoT
+IoT is the distributed collection of devices, aka things, that are connected via a network, allowing them to collect and communicate data. Data ingestion for IoT is complex but rewarding to learn.
+
+Data Mesh
+Data Mesh is a new approach to organizing data and data teams that has emerged to address the challenges organizations face when managing data at scale. The Data Mesh approach emphasizes autonomy, decentralized governance, and domain-driven design. Instead of flowing data from domains into a centrally owned platform, domains need to host and serve their domain datasets in an easily consumable way.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
+
+**Content:** Fundamentals of Data Engineering
+
