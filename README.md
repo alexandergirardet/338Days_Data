@@ -264,7 +264,7 @@ The lifecycle concerns itself with ingesting data from source and storing it, an
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_2.pdf)**
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Fundamentals of Data Engineering Chapter 2
 
 ### Day 17
 
@@ -275,7 +275,7 @@ Data architecture is a subset of enterprise architecture, which involves analyzi
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Fundamentals of Data Engineering Chapter 3
 
 
 ### Day 18
@@ -314,7 +314,7 @@ The principles for good data architecture outline in the book are:
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Fundamentals of Data Engineering Chapter 3
 
 ### Day 19
 
@@ -324,7 +324,7 @@ The main goal of all architecture concepts is to take data and transform it into
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Fundamentals of Data Engineering Chapter 3
 
 ### Day 20
 
@@ -373,5 +373,5 @@ Data Mesh is a new approach to organizing data and data teams that has emerged t
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Fundamentals of Data Engineering Chapter 3
 
