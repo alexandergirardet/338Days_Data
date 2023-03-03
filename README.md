@@ -373,5 +373,16 @@ Data Mesh is a new approach to organizing data and data teams that has emerged t
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
+### Day 20
+
+**Topic:** Data architecture examples
+
+Due to the abstract nature of data architecture, reasoning by example is helpful as it allows us to develop a deeper understanding of the concepts by relating to real life use cases. 
+
+Data Warehouse:
+A data warehouse is a central hub used for reporting and analysis. It is highly structured and formatted for analytics use cases. A data warehouse is defined as a subject-oriented, integrated, nonvolatile, and time-variant collection of data in support of management's decisions. Data warehouses are designed to be subject-oriented, integrated, non-volatile, and time-variant. Organizational data warehouse architecture separates online analytical processing from production databases and centralizes and organizes data. Technical data warehouse architecture, on the other hand, reflects the technical nature of the data warehouse. There are two primary ways to load data into a warehouse: ETL and ELT. ETL transforms the data before arriving in
+
+
+
 **Content:** Fundamentals of Data Engineering Chapter 3
 
