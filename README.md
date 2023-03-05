@@ -388,8 +388,24 @@ Data Mesh is a new approach to organizing data and data teams that has emerged t
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_Engineering_Chapter_3.pdf)**
 
-
-
-
 **Content:** Fundamentals of Data Engineering Chapter 3
 
+### Day 21
+
+**Topic:** Networking on Google Cloud
+
+Networking is an essential component of cloud computing, enabling communication and data exchange between different devices, both within a single organization and across the internet. In the context of Google Cloud, networking can be explained through a series of analogies and consists of three layers: Virtual Private Cloud (VPC), Subnets, and Routers.
+
+A VPC can be thought of as a virtual version of a physical network that houses your resources. It is a secure and isolated environment within the cloud where you can control access to your resources, customize your network configuration, and choose the resource IP addresses. A VPC acts as a private neighborhood for your resources in the cloud. Within a VPC, you can decide which resources can talk to each other and which ones can talk to the outside world. You can control access to them with firewalls, making it an ideal solution for organizations that need a secure and isolated network environment for their resources.
+
+Subnets allow you to further organize and segment your networking into smaller, more manageable parts. Subnets are a smaller part of a larger network, and they can be thought of as houses within a neighborhood. Subnets group services together logically, allowing for granular access to resources, IP address management, network traffic control, and resource organization. For instance, in the context of a stock market app, you could divide the resources into different subnets based on the function of each resource and the security requirements of the application. A web server subnet would contain resources relating to the front-end users of the application and would allow incoming traffic from HTTP and HTTPS ports. A database subnet would contain database resources that store information and stock market data. Firewall rules in this subnet would allow access from the backend application server subnet.
+
+Firewalls serve as a bouncer for the resources in your network. Firewalls ensure granular access to resources, allowing you to set rules for what traffic can access your resources. You can think of firewalls as bouncers at different points in your network, such as at the gate of the neighborhood, at the step of the house, and right in front of the resources. The modularity of the network architecture allows you to have bouncers that ensure access to similar types of resources.
+
+Routers serve as a traffic director, forwarding networking traffic from one part of the network to another. They allow traffic to be routed to your resources within your network and subnets.
+
+IAM permissions and firewall rules allow ingress and egress traffic inside your network. Ingress refers to the flow of data entering a network, while egress refers to the flow of data leaving a network. IAM allows you to set granular policies to practice the principle of least privilege, giving you complete control over your network architecture. Firewall rules allow you to control access to your resources, ensuring the security and performance of your network.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Certificates/Associate_Cloud_Engineer.pdf)**
+
+**Content:** Associate Cloud Engineer
