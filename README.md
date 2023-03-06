@@ -409,3 +409,18 @@ IAM permissions and firewall rules allow ingress and egress traffic inside your 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Certificates/Associate_Cloud_Engineer.pdf)**
 
 **Content:** Associate Cloud Engineer
+
+### Day 22
+
+**Topic:** Real Estate Project
+
+As a aspiring Data Engineer and ML Engineer there are many skills you would like to develop and show off. Over the past few weeks I have learned about the undercurrents relating to managing the data engineering lifecycle, many of these skills are not necessarily hard skills and harder to show a good understanding of through projects. However, the creation of pipelines that handle ingestion, transformation and serving, all while being stored and using software engineering best practices is the goal behind these two projects. Most notably, there will be two projects relating to the data engineering: A batch processing one, and a stream processing one. My Real Estate Project is a batch processing project that handles everything from data extraction, ingestion, transformation and serving. 
+
+The real estate project is an end to end pipeline that uses the web scraping framework, Scrapy, to extract data from Rightmove. A UK based real estate platform that contains listings for rentals and sales across the country. I understand that scraping data can be frowned upon, and I hereby declare that I am not using the data scraped from this website for commercial purposes, and that any use of the data is solely for personal or educational purposes. Additionally I am very sensitive to not overwhleming their servers by putting limits in place for the amount of requests I can make at any time. The goal of the project is to use the data to provide some interesting insights, and create a Machine Learning model that can predict the rental value of a property from it's sale listing. This will reflect by SparkML skills. However in the short term I aim to create a live orchestrated, cloud hosted pipeline that ingests, transforms and stores data every 24 hours, and serves it on a dashboard. 
+
+At the time being I have created a pipeline that extracts sites from rightmove, stores them in a Google Cloud Bucket as a JSON file, and then uses a custom made script that transforms the data and enforces a parquet schema so that the data is reproducible. I chose a Parquet schema as the data for a site contains embedded JSON in a few columns. Finally the data is stored in a new GCS folder as processed parquet files. Thus far I have extracted roughly 3000 sites, and I have visualized their locations below using Data Studio. 
+
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Certificates/Associate_Cloud_Engineer.pdf)**
+
+**Content:** Real estate Project
