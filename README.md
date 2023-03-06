@@ -421,7 +421,7 @@ The real estate project is an end to end pipeline that uses the web scraping fra
 At the time being I have created a pipeline that extracts sites from rightmove, stores them in a Google Cloud Bucket as a JSON file, and then uses a custom made script that transforms the data and enforces a parquet schema so that the data is reproducible. I chose a Parquet schema as the data for a site contains embedded JSON in a few columns. Finally the data is stored in a new GCS folder as processed parquet files. Thus far I have extracted roughly 3000 sites, and I have visualized their locations below using Data Studio. 
 
 <p align="center">
-  <img width="800" height="600" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/rightmove_locations.png">
+  <img width="500" height="500" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/rightmove_locations.png">
 </p>
 
 **[Project](https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
