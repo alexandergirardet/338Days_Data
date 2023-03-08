@@ -424,6 +424,10 @@ At the time being I have created a pipeline that extracts sites from rightmove, 
   <img width="500" height="500" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/rightmove_locations.png">
 </p>
 
-**[Project](https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
+**[Project]
+
+
+
+(https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
 
 **Content:** Real estate Project
