@@ -432,7 +432,7 @@ At the time being I have created a pipeline that extracts sites from rightmove, 
 
 ### Day 23
 
-**Topic:** Computation
+**Topic:** Computation TO FIX
 
 When we think of computer science, we often think of the tools used, rather than the knowledge behind it. Computer science is about the type of knowledge it provides, which is imperative knowledge or "how to." On the other hand, declarative knowledge is focused on what needs to be achieved, rather than how to achieve it. SQL and Prolog are examples of declarative knowledge where the focus is on specifying a set of rules that the computer uses to come to a solution.
 
@@ -443,3 +443,7 @@ One way to manage complexity is through abstraction, where a black box captures 
 To allow for computation, we must determine how to represent information. Numbers, characters, and booleans are assumed to be provided by the language, and a basic set of operations are provided on these primitive elements. Scheme is a variant of LISP, which provides a set of expressions with a simple set of rules that tell us how to create legal expressions in the language.
 
 Primitives, means of combination, and means of abstraction are the kinds of language constructs. Primitives are the simplest elements on top of which we will build all of our computational constructs. Built-in pre-defined procedures are used to manipulate these objects. Combinations are used to evaluate the value of all sub-expressions in any order, then applying the operator to the values of the arguments. Abstractions give a name to an expression, and once defined, we need a way to get the value of expressions from the name.
+
+### Day 24
+
+**Topic:** Project Update TO FIX
