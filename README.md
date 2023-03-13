@@ -476,6 +476,6 @@ Premises, Cloud, Multi-Cloud, and Hybrid cloud are the options for location. It 
 Managing your own hardware
 Very large companies may have specific needs where the economies of scale at which managing your hardware and network connections make sense. This usually requires massive workloads.
 
-**[NOTES](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
 
 **Content:** Fundamentals of Data Engineering Chapter 4
