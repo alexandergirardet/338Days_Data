@@ -424,15 +424,13 @@ At the time being I have created a pipeline that extracts sites from rightmove, 
   <img width="500" height="500" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/rightmove_locations.png">
 </p>
 
-(https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
+**[Project](https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
 
 **Content:** Real estate Project
 
-**[Project]
-
 ### Day 23
 
-**Topic:** Computation TO FIX
+**Topic:** Computation
 
 SICP is considered a classic computer science book that has influenced many other programming languages and books. It's emphasis on the fundamental concepts in computer science using it's approachable stle of building up to more complex topic, as well as the paradigm shift and emphasis on critical thinking makes it a must read for aspiring programmers. 
 
@@ -444,6 +442,39 @@ In the context of SICP, the authors aim to establish the idea that a computer la
 
 Lisp, the programming language used in SICP, is particularly well-suited for teaching fundamental computer science concepts such as recursion, abstraction, and higher-order functions. Lisp's minimal syntax, powerful list manipulation facilities, and support for recursion, abstraction, and higher-order functions make it an ideal language for teaching the importance of proper syntax and syntax trees.
 
+**[Notes](https://github.com/alexandergirardet/real_estate_analytics/tree/main)** TO FIX
+
+**Content:** SICP
 ### Day 24
 
-**Topic:** Project Update TO FIX
+**Topic:** Fundamentals of Data Engineering Chapter 4 Part 1
+
+Choosing the right technology for data engineering requires a lot of considerations. In this blog post, we will discuss the key factors to keep in mind when choosing the appropriate technology for data engineering lifecycle. The primary aim of data engineering is to design reliable and robust systems to carry data through the full lifecycle and serve the needs of end-users. Therefore, it is vital to focus on the value added to the end-user rather than chasing bleeding-edge technology. The following are key considerations when choosing the right tools for data engineering:
+
+Architecture first design
+It is essential to focus on the what, why, and when of architecture rather than how, which refers to the tools. While tools are necessary for data engineering, they should not be the primary focus when designing the architecture.
+
+Team size and capabilities
+The size of the team and their capabilities are crucial in determining the complexity of tools to adopt to produce the architecture. Small teams should use managed solutions and SaaS to put off technical complexity and focus on adding value, while large teams can benefit from more complex tools.
+
+Speed to market
+Speed to market is a crucial consideration in data engineering. It is essential to choose technologies that help deliver features and data faster while maintaining high-quality standards and security. It also means working in a tight feedback loop of launching, learning, iterating, and making improvements.
+
+Interoperability
+Interoperability describes how various technologies or systems connect, exchange information, and interact. It is vital to choose tools that interact seamlessly with other tools across the data engineering lifecycle. Modularity and flexibility should be designed into the architecture to allow for the easy swapping of technologies as new practices and alternatives evolve.
+
+Cost optimization and business value
+The total cost of ownership (TCO) and the total opportunity cost of ownership (TOCO) should be considered when choosing tools. It is essential to understand the basic costs you can control, such as direct and indirect costs, and how expenses fall into two big groups: operating expenses (OPEX) and capital expenses (CAPEX). An opex-first approach centered on the cloud and flexible pay-as-you-go tech is recommended. FinOps is a useful practice that applies DevOps-like practices of monitoring and dynamically adjusting systems to fully operationalize financial accountability and business value.
+
+Today versus the future: Immutable versus transitory technologies
+When choosing technologies, it is vital to focus on the present and near future while considering handling future unknowns and evolution. Identifying immutable technologies from transitory ones every two years, using the immutable technologies as your base and building transitory tools around them, and considering how easy it is to transition from a chosen technology is recommended.
+
+Location
+Premises, Cloud, Multi-Cloud, and Hybrid cloud are the options for location. It is essential to choose the right location depending on the company's specific needs. Cloud providers use virtualization to sell slices of hardware but also sell these pieces with varying technical characteristics and risks attached, similar to financial derivatives. An opex-first approach is recommended, and users should aim to increase business value by leveraging the dynamic value of the cloud.
+
+Managing your own hardware
+Very large companies may have specific needs where the economies of scale at which managing your hardware and network connections make sense. This usually requires massive workloads.
+
+**[NOTES](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+
+**Content:** Fundamentals of Data Engineering Chapter 4
