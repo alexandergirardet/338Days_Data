@@ -37,6 +37,7 @@ Designing Data-Intensive Applications | :construction:
 Structure and Interpretation of Computer Programs | :construction:
 Machine Learning Engineering | 
 Fundamentals of Data Engineering | :construction:
+Kimball's Data Warehouse Toolkit | :construction:
 
 ### Projects
 
