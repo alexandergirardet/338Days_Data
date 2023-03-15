@@ -512,6 +512,6 @@ The Kimball approach is sometimes illustrated using the restaurant metaphor. The
 
 
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
 
 **Content:** Kimball's Data Warehouse Toolkit
