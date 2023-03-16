@@ -497,21 +497,6 @@ The Kimball approach also emphasizes data granularity, which is the specificity 
 Operational Source Systems
 The Kimball approach recognizes that operational source systems, which capture a business's transactions, are outside of the data warehouse, and thus, outside of the DW/BI environment. You have no control over the content or format of the data.
 
-Extract, Transformation, and Load System
-The ETL system is an essential part of the DW/BI environment. Extraction is the first step in the process of getting data into the DW. Once the data is extracted and copied in, it belongs to the DW. You will then transform the data such as cleansing it or dealing with missing elements. This adds value to the data. The load part is the physical structuring of the data into the presentation area's target dimensional models.
-
-Presentation Area to Support BI
-The DW presentation area is where data is organized, stored, and made available for direct querying by users, report writers, and other analytical BI apps. The presentation area should be structured around business process measurements events. This naturally aligns with the operational source data capture systems. They should not be designed to deliver the report of the day. You should construct a single fact table for atomic sales metrics rather than populating several similar databases.
-
-All the dimensional structures must be built using common, conformed dimensions. The bus architecture is crucial in the presentation area as it prevents standalone tables that cannot be tied together. This is the bane of DW as it will lead to incompatible views of the enterprise. The bus architecture is a framework that enables agile, decentralized, realistically scoped, and iteratively made DW.
-
-BI Applications
-A BI application refers to the range of capabilities provided to business users to leverage the presentation area for analytic decision making.
-
-Restaurant Metaphor for the Kimball Architecture
-The Kimball approach is sometimes illustrated using the restaurant metaphor. The data warehouse ETL system is like the restaurant's kitchen. Source data is magically transformed into meaningful, presentable information. The back room ETL system must be laid out and architected long before any data is extracted from the source. The kitchen is designed to ensure throughput. Data quality comes in like raw ingredients that must be checked, conditions are continually monitored to ensure high integrity, and the kitchen is cut off from the presentation
-
-
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
 
 **Content:** Kimball's Data Warehouse Toolkit
@@ -520,17 +505,6 @@ The Kimball approach is sometimes illustrated using the restaurant metaphor. The
 
 **Topic:** Kimball's Data Warehouse Toolkit Chapter 1 Part 2
 
-In the world of business intelligence, data warehousing is a critical process that allows organizations to gather and analyze data to make informed decisions. One of the most popular approaches to data warehousing is the Kimball Dimensional Modeling Approach. This approach, developed by Ralph Kimball, emphasizes the use of dimensional modeling, which is a way of organizing data into easy-to-understand, multidimensional views. This approach has been widely adopted by businesses around the world due to its simplicity and effectiveness.
-
-Snowflaking and Star Schemas
-The Kimball approach involves the use of star schemas, which consist of a central fact table surrounded by dimension tables. This arrangement makes it easy to query data and perform analysis. The approach also advises against normalizing data by storing only a code in the product dimension and creating a separate lookup table. Instead, dimension tables are typically denormalized with flattened many-to-one relationships within a single dimension table, which increases storage capacity.
-
-Data Granularity and Dimensionality
-The Kimball approach also emphasizes data granularity, which is the specificity of the data. Granularity refers to the amount of detail in the data. The most granular data has the most dimensionality, meaning that it has more attributes or dimensions than less granular data. This is important because users may be interested in seeing the most fine-grained data. Additionally, in dimensional models, you can add completely new dimensions to the schema as long as a single value of that dimension is defined for each existing fact row.
-
-Operational Source Systems
-The Kimball approach recognizes that operational source systems, which capture a business's transactions, are outside of the data warehouse, and thus, outside of the DW/BI environment. You have no control over the content or format of the data.
-
 Extract, Transformation, and Load System
 The ETL system is an essential part of the DW/BI environment. Extraction is the first step in the process of getting data into the DW. Once the data is extracted and copied in, it belongs to the DW. You will then transform the data such as cleansing it or dealing with missing elements. This adds value to the data. The load part is the physical structuring of the data into the presentation area's target dimensional models.
 
@@ -544,7 +518,6 @@ A BI application refers to the range of capabilities provided to business users 
 
 Restaurant Metaphor for the Kimball Architecture
 The Kimball approach is sometimes illustrated using the restaurant metaphor. The data warehouse ETL system is like the restaurant's kitchen. Source data is magically transformed into meaningful, presentable information. The back room ETL system must be laid out and architected long before any data is extracted from the source. The kitchen is designed to ensure throughput. Data quality comes in like raw ingredients that must be checked, conditions are continually monitored to ensure high integrity, and the kitchen is cut off from the presentation
-
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
 
