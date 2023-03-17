@@ -522,3 +522,19 @@ The Kimball approach is sometimes illustrated using the restaurant metaphor. The
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
 
 **Content:** Kimball's Data Warehouse Toolkit
+
+### Day 27
+
+**Topic:** The Enterprise Data Warehouse Bus Architecture 
+
+The Enterprise Data Warehouse (EDW) Bus Architecture is an incremental approach to building an enterprise DW system that decomposes planning processes into manageable pieces. It focuses on business processes, providing integration across standardized conformed dimensions that are reused across processes. The EDW Bus Matrix is an essential tool for designing and communicating the architecture, where the rows represent business processes and the columns represent dimensions. The shaded cells indicate whether a dimension is associated with a given business process.
+
+The EDW Bus Matrix provides an architectural framework while also decomposing the program to encourage manageable agile implementations corresponding to the rows on the matrix. The detailed implementation bus matrix is a more granular version of the EDW Bus Matrix, showing specific fact tables or OLAP cubes. However, the implementation bus matrix is yet to be read from chapter 5.
+
+Once the EDW Bus Matrix rows have been identified, the opportunity/stakeholder matrix can be drafted by replacing the dimension columns with business functions such as marketing, sales, and finance. Then, the matrix cells can be shaded to indicate which business functions are interested in which business process rows. This matrix is used to identify which business groups should be invited to the collaborative design sessions for each process-centric row.
+
+Overall, the EDW Bus Architecture provides a systematic approach to building an enterprise DW system that focuses on business processes and delivers integration across standardized conformed dimensions. The use of matrices such as the EDW Bus Matrix and the opportunity/stakeholder matrix facilitates communication and collaboration among stakeholders involved in the process-centric rows.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
+
+**Content:** Kimball's Data Warehouse Toolkit
