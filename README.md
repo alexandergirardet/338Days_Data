@@ -538,3 +538,21 @@ Overall, the EDW Bus Architecture provides a systematic approach to building an 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/kimball_warehouse/The_data_warehouse_toolkit_Chapter_1.pdf)**
 
 **Content:** Kimball's Data Warehouse Toolkit
+
+### Day 28
+
+**Topic:** Big Week for AI
+
+Last week, Monday 13th of March to Sunday 19th was a massive week for Artificial Intelligence. This could be a week that is world changing depending on the new tools and uses that originate from the AI products/updates released this week. 
+
+Monday: Stanford introduced the Alpaca 7B model. This is a large language model that has similar performance to GPT3 but more importantly is much more leightweight. It is trained on 52,000 instructions. An instruction is used to guide the model towards generating a certain type of output based on an input in the context of the instruction. GPT3 is a 165B model which makes it a lot more heavy weight compared to the Alpaca model. The Alpaca model could theoritically be trained from your laptop with a failry sophisticated Graphic's card. The impact of this release is that we are one step closer to democratizing largue language models.
+
+Tuesday: Google released AI functionality inside of their workspace tools, such as google docs and Gmail. Where you can autocomplete your emails, write articles etc... Very similar to GPT3 but directly inside of Google tools. Additionally, it will also be integrated inside of google sheets and slides. I would be very curious to see the impact it has on financial models that rely on sheets/excel to be properly run. Google also announced that they will be releasing PaLM API to a select amount of developers to build upon. PaLM is a multi-mode model which means it can accept both text and images as inputs. Anthropic introduced Claude, which is also another LLM based chat bot. Finally, GPT 4 was released.  Waching the live demo blew me away, GPT4 can understand much more complex prompts, but much like PaLM it will also bea multi-mode model as well. GPT4 in the demo was able to create the HTML and Javascript for a website template based on the sketch on a paper that was inputed into the model.
+
+Wednesday: Midjourney released V5, and a magazine. The magazine is a curated collection of images from the community. But more importantly V5 is out which produces much more photo realistic images. Another major change is that Midjourney V5 is reimplementing image weights and more importantly will allow you to create images based on long prompts. It now accepts prompts as full sentences. This now enables ChatGPT to generate prompts to make images, ingest the image and update it's prompts based on the feedback from the ingested image. Incredible.
+
+Thursday: Microsoft announced 365 co-pilot which is very similar to the Google Workspace announcement. Microsoft also introduced the new business chat, where it takes all the data from all of your Microsoft suite tools, and answer your question based on meeting notes, emails, and notes. It essentially creates a finetuned ChatGPT model for you. 
+
+There were no more notable updates from the rest of the week. But I will be watching the Nvidia GTC conference regarding AI breakthroughs. 
+
+**Content:** AI Updates
