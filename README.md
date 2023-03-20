@@ -32,7 +32,6 @@ Books  | Status of Completion
 Mathematics for Machine Learning  |
 Mathematics for the non-mathematician  | :construction:
 Hands On Machine Learning with Scikit Learn, Keras and TensorFlow | 
-Speech and Language Processing | 
 Designing Data-Intensive Applications | :construction:
 Structure and Interpretation of Computer Programs | :construction:
 Machine Learning Engineering | 
