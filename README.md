@@ -555,3 +555,17 @@ Thursday: Microsoft announced 365 co-pilot which is very similar to the Google W
 There were no more notable updates from the rest of the week. But I will be watching the Nvidia GTC conference regarding AI breakthroughs. 
 
 **Content:** AI Updates
+
+### Day 29
+
+**Topic:** Jinja
+
+Jinja is a template engine that uses Python to generate dynamic markup languages. It allows developers to define variables and placeholders within a template, which are replaced with real values at runtime. Additionally, Jinja enables control structures like loops, conditionals, and macros for more complex template processing. DBT, on the other hand, is a data transformation tool that uses SQL to define models. By integrating Jinja with DBT, you can inject SQL based on inputs or parameters, making your data transformation logic more modular and maintainable. 
+
+Jinja enables you to create a programming environment with SQL and follow best practices for software engineering. It allows for data engineers to utilize SQL in ways that weren't usually possible. By providing users with statements that are used to control flow, expressions that can output a string based on a variable. DE have much more uses for SQL based transformations. 
+
+Macros is a jinja concept that is analogous to functions in Object oriented programming languages. It provides modularity in SQL and DBT allow you to create DRY (Don't Repeat Yourself) code. Additionally, it enables you to create consistent pipelines that make use of the same macros which can be greatly used with Kimball type datawarehouses. 
+
+DBT also provides some advanced built in functions that can be used to create more complex macros. A few are: The run_query function allows you to run queries and return the results in a DBT macro, similar to a pandas DataFrame. The log function helps you monitor what's happening under the hood, which is useful when creating complex macros: The execute variable returns True when DBT is in "execute" mode, allowing you to defer compilation to the point of execution.
+
+Overall Jinja is a great addition to the DBT environment and allows far greater flexibility in the transformation process of your data pipelines, and enable modeling of the data in a 
