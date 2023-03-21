@@ -558,7 +558,7 @@ There were no more notable updates from the rest of the week. But I will be watc
 
 ### Day 29
 
-**Topic:** Jinja
+**Topic:** Jinja and DBT pairing
 
 Jinja is a template engine that uses Python to generate dynamic markup languages. It allows developers to define variables and placeholders within a template, which are replaced with real values at runtime. Additionally, Jinja enables control structures like loops, conditionals, and macros for more complex template processing. DBT, on the other hand, is a data transformation tool that uses SQL to define models. By integrating Jinja with DBT, you can inject SQL based on inputs or parameters, making your data transformation logic more modular and maintainable. 
 
@@ -568,4 +568,10 @@ Macros is a jinja concept that is analogous to functions in Object oriented prog
 
 DBT also provides some advanced built in functions that can be used to create more complex macros. A few are: The run_query function allows you to run queries and return the results in a DBT macro, similar to a pandas DataFrame. The log function helps you monitor what's happening under the hood, which is useful when creating complex macros: The execute variable returns True when DBT is in "execute" mode, allowing you to defer compilation to the point of execution.
 
-Overall Jinja is a great addition to the DBT environment and allows far greater flexibility in the transformation process of your data pipelines, and enable modeling of the data in a 
+Overall Jinja is a great addition to the DBT environment and allows far greater flexibility in the transformation process of your data pipelines, and enable modeling of the data using SWE best practices. 
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
+
+**Content:** Jinja
+
+
