@@ -67,6 +67,8 @@ Machine Learning Zoomcamp  |
 Topic Name  | Post #
 ------------- | -------------
 DBT | [29]
+Airflow | [10]
+BigQuery | [11]
 
 ### Articles
 
