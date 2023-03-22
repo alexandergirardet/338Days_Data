@@ -62,9 +62,9 @@ Bootcamp  | Status of Completion
 Data Engineering Zoomcamp  | :construction:
 Machine Learning Zoomcamp  | 
 
-### Research Papers
+### Data Engineering Concepts
 
-Paper  | #
+Topic Name  | Post #
 ------------- | -------------
 Paper Name | 1
 
