@@ -572,7 +572,11 @@ DBT also provides some advanced built in functions that can be used to create mo
 
 Overall Jinja is a great addition to the DBT environment and allows far greater flexibility in the transformation process of your data pipelines, and enable modeling of the data using SWE best practices. 
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
+**[Notes]
+
+
+This is a test
+(https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
 
 **Content:** Jinja
 
