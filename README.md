@@ -572,12 +572,87 @@ DBT also provides some advanced built in functions that can be used to create mo
 
 Overall Jinja is a great addition to the DBT environment and allows far greater flexibility in the transformation process of your data pipelines, and enable modeling of the data using SWE best practices. 
 
-**[Notes]
-
-
-This is a test
-(https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
 
 **Content:** Jinja
+
+### Day 30
+
+**Topic:** SQL Window Functions
+
+SQL Window Functions are a powerful tool for data engineers to analyze data and perform calculations based on a specific subset of rows within a larger dataset. In this blog post, we will explore the steps to understand SQL Window Functions and provide examples of different functions and syntax.
+
+Step 1: Understand the Syntax
+
+The syntax of SQL Window Functions is essential to understanding how they operate. The basic syntax is as follows:
+
+function_name() OVER (PARTITION BY partition_clause ORDER BY order_clause ROWS BETWEEN frame_start AND frame_end);
+
+The function_name is the calculation to be performed, such as SUM, AVG, or ROW_NUMBER. The OVER keyword is used to define the window function, with arguments to specify the partitioning, ordering, and range of rows over which the function should be computed.
+
+Step 2: Choose a Function
+
+There are many functions to choose from in a window function. Some of the most common include:
+
+* SUM()
+* AVG()
+* MIN()
+* MAX()
+* ROW_NUMBER()
+* RANK()
+* LEAD()
+* DENSE_RANK()
+* LAG()
+* PERCENT_RANK()
+* NTH_VALUE()
+* NTILE()
+
+ROW_NUMBER: This function assigns a unique integer value to each row in the result set, based on the order specified in the ORDER_BY clause. It is useful when you need to number rows for grouping or ranking purposes. For example, use ROW_NUMBER to assign a unique ID to each row in a result set for further processing.
+
+RANK: This function assigns a rank to each row in the result set, based on the order specified in the ORDER_BY clause. If multiple rows have the same value, they will receive the same rank, and the next rank will be skipped. For example, if three rows have the same value, and have the rank 1, 2, and 2, then the next rank will be 4 not 3. This is useful when you want to identify the top or bottom N rows in a result set, based on some criteria.
+
+DENSE_RANK: This function assigns a rank to each row in the result set, based on the order specified in the ORDER_BY clause. If multiple rows have the same value, they will receive the same rank, and the next rank will be the next consecutive integer. For example, if three rows have the same value and have the rank, 1, 2, and 2, then the next rank will be 3. This is useful when you want to identify the top or bottom N rows in a result set, based on some criteria but you want to include ties.
+
+LEAD: This function returns the value of a column in the next row of the result set, based on the order specified in the ORDER_BY clause. You can also specify an offset to retrieve the value from a row farther ahead. LEAD is useful when you want to compare a value in a row to the next or future values in the result set. For example, to calculate a percentage change or to identify trends.
+
+LAG: This function returns the value of a column in the previous row of the result set, based on the order specified in the ORDER_BY clause. You can also specify an offset to retrieve the value from a row farther behind. LAG is useful when you want to compare a value in a row to the previous or past values in the result set. For example, to calculate a percentage change or to identify trends.
+
+Step 3: Specify the Partitioning
+
+The PARTITION_BY clause specifies how the rows should be partitioned. This means that the function will be computed separately for each partition. For example, if you want to compute a moving average for each customer, you might partition the data by Customer ID.
+
+Step 4: Specify the Ordering
+
+The ORDER_BY clause determines the order in which the rows are processed within each partition. This means that the window function will be computed in the order specified by the ORDER_BY clause. If you use a SUM function to calculate a running total of sales for each month, you might order the rows by month so that the function is applied in chronological order.
+
+Step 5: Specify the Frame
+
+The ROWS_BETWEEN clause specifies the frame of rows over which the function should be computed. This means that the function will be applied to a subset of rows within each partition, based on their position relative to the current row. The function takes two keywords to specify the start and end of the frame.
+
+For example, you might specify ‘ROWS BETWEEN 2 PRECEDING AND CURRENT ROW’ to compute a moving average based on the last three months of data.
+
+There are five possible frame specifications:
+
+UNBOUNDED PRECEDING: Includes all rows from the beginning of the partition up to and including the current row.
+n PRECEDING: Includes n rows before the current row up to and including the current row.
+CURRENT ROW: Includes only the current row.
+n FOLLOWING: Includes the current row up to and including n rows after the current row.
+UNBOUNDED FOLLOWING: Includes all rows from the current row up to the end of the partition.
+Window Function Visualized
+
+To help visualize how SQL Window Functions work, let's review the key concepts.
+
+Unlike normal aggregation functions with grouping, which only return one row per group, window functions return all rows, each having their calculated value based on their defined window. Window functions use the OVER keyword and its arguments to define the calculation window.
+
+There are three parts to a window function:
+
+Grouping: This defines the group that each row belongs to (PARTITION BY).
+Order: This sorts values within each group and makes the window expand incrementally within each group (ORDER BY).
+Range: This is used to further define the window size within each group (ROWS or RANGE).
+Using these three parts, we can create powerful window functions that provide insights into our data.
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
+
+**Content:** SQL
 
 
