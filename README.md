@@ -651,7 +651,7 @@ Order: This sorts values within each group and makes the window expand increment
 Range: This is used to further define the window size within each group (ROWS or RANGE).
 Using these three parts, we can create powerful window functions that provide insights into our data.
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DBT/jinja.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/SQL/window_functions.pdf)**
 
 **Content:** SQL
 
