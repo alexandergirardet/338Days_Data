@@ -655,4 +655,10 @@ Using these three parts, we can create powerful window functions that provide in
 
 **Content:** SQL
 
+### Day 31
+
+**Topic:** Update on estatewise project -- Completed orchestrated pipeline locally
+
+
+**Content:** Estate Wise project
 
