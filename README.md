@@ -659,6 +659,34 @@ Using these three parts, we can create powerful window functions that provide in
 
 **Topic:** Update on estatewise project -- Completed orchestrated pipeline locally
 
+This is a quick update regarding my estatewise project. I have completed the development of my pipeline that runs locally on my docker environment. My pipeline relies on 5 docker containers:
+
+* postgres: which is an image of postgres database that allows me to host it locally on docker, and access it through the docker network.
+* airflow-init: A container that is only run upon launch to trigger the launch of airflow, deploys it's dependencies and set's up the environment.
+* airflow-webserver: A container containing the web server that hosts the airflow UI, allowing me to interact with airflow.
+* airflow-scheduler: A container containing the airflow scheduler. In a production environment you would use worker nodes through celery or kubernetes but it is not necessary for this low scale flow at the moment.
+* scrapyd-app: A container containing scrapyd which is an app for hosting and deploying scrapy spiders which allow me to extract data from the web in a asynchronous fashion.
+
+<IMAGE>
+
+These containers share a bridge network. A bridge network is a shared network between docker containers that allow them to communicate between eachother. It is set up automatically with docker-compose. Within my applications I can access other apps through their container name. For example I access the scapyd app using: http://scrapyd-app:6800/.
+
+My Airflow dag contains 5 tasks:
+* print-projects: Prints the projects currently hosted on scrapyd. I do this for logging reasons.
+* print-spiders: Prints the spiders currently hosted on scrapyd. I do this for logging reasons.
+* schedule-job-task: Schedules a scrapyd job through a Post request which will receive the job ID as response. The job ID is sent to the next task as an XCom.
+* check-job-status: This python task will extract the Job ID from the XCom, and monitor the job for 5 minutes. Either the job has ended before 5 minutes or it will trigger a shutdown of the job at the end of 5 minutes. 
+* Trigger-transfromation: Bash task that cd into my transformation app and launches the processor.py script which triggers the transformation of the newly arrived files in GCP. Each raw file will be processed and transformed from JSON into a Parquet file with a strict schema. 
+
+<IMAGE>
+
+An Xcom (short communication) is a mechanism to share small amount of information between tasks within a dag.
+
+As you can see below I have successfully ran a full flow which takes on average 6-7 minutes. 
+
+<IMAGE>
+
+While my pipeline now works in a local environment there is still a lot of work to do done for this project to be production ready. I will integrate terraform into the project for my cloud infrastructure. Clean up the code and add comments where necessary. Move key files to more appropriate locations and add more security for passwords using environment variables. Create a CI/CD pipeline to run my app using Cloud Run, and allow for seamless updates to my code. Enable airflow and my scrapd-app to interact with a cloud hosted PostgreSQL instance. Once this is done I will launch the pipeline to run every 24 hours. From there I will begin working on integrating other data sources that I will model using a dimensional data model and transform with DBT. Once I am comfortable I will create the dashboard. 
 
 **Content:** Estate Wise project
 
