@@ -668,7 +668,7 @@ This is a quick update regarding my estatewise project. I have completed the dev
 * scrapyd-app: A container containing scrapyd which is an app for hosting and deploying scrapy spiders which allow me to extract data from the web in a asynchronous fashion.
 
 <p align="center">
-  <img width="750" height="200" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/docker_containers.png">
+  <img width="400" height="200" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/docker_containers.png">
 </p>
 
 
@@ -682,7 +682,7 @@ My Airflow dag contains 5 tasks:
 * Trigger-transfromation: Bash task that cd into my transformation app and launches the processor.py script which triggers the transformation of the newly arrived files in GCP. Each raw file will be processed and transformed from JSON into a Parquet file with a strict schema. 
 
 <p align="center">
-  <img width="750" height="200" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/airflow_tasks.png">
+  <img width="750" height="120" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/airflow_tasks.png">
 </p>
 
 An Xcom (short communication) is a mechanism to share small amount of information between tasks within a dag.
@@ -690,7 +690,7 @@ An Xcom (short communication) is a mechanism to share small amount of informatio
 As you can see below I have successfully ran a full flow which takes on average 6-7 minutes. 
 
 <p align="center">
-  <img width="750" height="200" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/successful_run.png">
+  <img width="750" height="120" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/successful_run.png">
 </p>
 
 While my pipeline now works in a local environment there is still a lot of work to do done for this project to be production ready. I will integrate terraform into the project for my cloud infrastructure. Clean up the code and add comments where necessary. Move key files to more appropriate locations and add more security for passwords using environment variables. Create a CI/CD pipeline to run my app using Cloud Run, and allow for seamless updates to my code. Enable airflow and my scrapd-app to interact with a cloud hosted PostgreSQL instance. Once this is done I will launch the pipeline to run every 24 hours. From there I will begin working on integrating other data sources that I will model using a dimensional data model and transform with DBT. Once I am comfortable I will create the dashboard.
