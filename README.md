@@ -668,7 +668,7 @@ This is a quick update regarding my estatewise project. I have completed the dev
 * scrapyd-app: A container containing scrapyd which is an app for hosting and deploying scrapy spiders which allow me to extract data from the web in a asynchronous fashion.
 
 <p align="center">
-  <img width="600" height="500" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/docker_containers.png">
+  <img width="900" height="500" src="https://github.com/alexandergirardet/real_estate_analytics/blob/main/src/docker_containers.png">
 </p>
 
 
