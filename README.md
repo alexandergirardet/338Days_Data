@@ -699,3 +699,21 @@ While my pipeline now works in a local environment there is still a lot of work 
 
 **Content:** Estate Wise project
 
+### Day 31
+
+**Topic:** Continuous Integration and Continuous Deployment
+
+Software development has come a long way since the traditional Waterfall model. The Waterfall approach is a linear, sequential approach to software development in which each phase of the development process must be completed before moving to the next phase. Although this approach has been widely used in the past, it has several limitations that have led to the development of new models such as Agile and DevOps.
+
+The Agile model was developed as a response to the limitations of the Waterfall model. It focuses on quick feedback from clients and the development of prototypes. This is done by creating small actionable blocks called sprints that allow for immediate feedback from clients, which is then integrated into the next sprint. The entire process revolves around feedback loops, which allows for continuous improvement and faster delivery of software. Although the Agile model has several advantages, it still has its own limitations such as the lack of testing on production systems.
+
+This limitation led to the development of the DevOps model, which aims to bring the development and operations teams into a single team. The goal of this model is to create software that is tested in a production environment, eliminating bugs and ensuring smooth deployment. The operations team provides feedback on the production environment, allowing the development team to create software that meets the needs of the end-users.
+
+The DevOps model involves several processes such as planning, coding, building, testing, releasing, deploying, operating, and monitoring. These processes are carried out using tools such as Git, Maven, Selenium, Jenkins, Ansible, and Terraform. These tools allow for automation of the processes, which reduces the time taken to create and deliver software, reduces the complexity of maintaining an application, and improves collaboration between developers and operations teams.
+
+The DevOps model also involves continuous delivery, continuous integration, and continuous deployment processes. Continuous delivery involves the plan, code, build, and test environment. Continuous integration involves testing the code to quickly identify any defects in the code. Continuous deployment involves pushing the code to production, where it will be deployed and monitored.
+
+**[Project](https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
+
+**Content:** CI/CD
+
