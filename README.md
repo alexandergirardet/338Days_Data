@@ -713,7 +713,7 @@ The DevOps model involves several processes such as planning, coding, building, 
 
 The DevOps model also involves continuous delivery, continuous integration, and continuous deployment processes. Continuous delivery involves the plan, code, build, and test environment. Continuous integration involves testing the code to quickly identify any defects in the code. Continuous deployment involves pushing the code to production, where it will be deployed and monitored.
 
-**[Project](https://github.com/alexandergirardet/real_estate_analytics/tree/main)**
+**[Notes]([https://github.com/alexandergirardet/real_estate_analytics/tree/main](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Notes/devops.pdf)**
 
 **Content:** CI/CD
 
