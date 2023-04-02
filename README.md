@@ -712,9 +712,13 @@ The DevOps model involves several processes such as planning, coding, building, 
 
 The DevOps model also involves continuous delivery, continuous integration, and continuous deployment processes. Continuous delivery involves the plan, code, build, and test environment. Continuous integration involves testing the code to quickly identify any defects in the code. Continuous deployment involves pushing the code to production, where it will be deployed and monitored.
 
-**[Notes]([https://github.com/alexandergirardet/real_estate_analytics/tree/main](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Notes/devops.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Notes/devops.pdf)**
 
 **Content:** CI/CD
+
+### Day 32
+
+**Topic:** Fundamentals of Data Engineering Chapter 4 Part 2
 
 Navigating the Data Engineering Landscape: Hybrid Cloud, Multicloud, and Choosing the Right Technologies
 In the rapidly evolving world of data engineering, companies face an array of choices when it comes to cloud solutions, open source software, and proprietary technologies. This blog post delves into the key considerations that should inform your decision-making process, touching on topics such as hybrid and multicloud solutions, the pros and cons of monolithic versus modular systems, and the ongoing debate between serverless and server-based architectures.
