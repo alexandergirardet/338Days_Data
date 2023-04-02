@@ -720,32 +720,34 @@ The DevOps model also involves continuous delivery, continuous integration, and 
 
 **Topic:** Fundamentals of Data Engineering Chapter 4 Part 2
 
-Navigating the Data Engineering Landscape: Hybrid Cloud, Multicloud, and Choosing the Right Technologies
 In the rapidly evolving world of data engineering, companies face an array of choices when it comes to cloud solutions, open source software, and proprietary technologies. This blog post delves into the key considerations that should inform your decision-making process, touching on topics such as hybrid and multicloud solutions, the pros and cons of monolithic versus modular systems, and the ongoing debate between serverless and server-based architectures.
 
-Hybrid Cloud and Multicloud: Maximizing Performance and Flexibility
 As companies increasingly adopt cloud services, many choose to maintain certain workloads on-premises while moving others to the cloud, creating hybrid cloud environments. In some cases, data-intensive applications may benefit from a multicloud strategy, which entails deploying workloads to multiple public clouds to overcome network latency and bandwidth limitations.
 
 However, managing multicloud solutions can be complex, and a new generation of "cloud of clouds" tools aims to reduce this complexity by offering services across clouds, seamlessly replicating data between them, or managing workloads from a single work pane. Solutions like Snowflake are part of this evolving trend, and it's crucial to keep an eye on such developments as they unfold.
 
-Build versus Buy: Leveraging Competitive Advantage
 When selecting a data engineering solution, it's essential to consider whether building and customizing a solution will provide a competitive advantage or if it's better to use existing solutions. This choice often boils down to the two types of data engineers:
 
 Type A (Abstraction) engineer: Focuses on using off-the-shelf products and avoiding undifferentiated heavy lifting by keeping data architecture abstract and straightforward.
 Type B (Build) engineer: Develops custom data tools and systems that scale and leverage a company's core competency and competitive advantage.
+
 It's important to embrace abstraction and Type A behavior whenever possible. However, if a competitive advantage can be provided, lean towards Type B behavior.
 
-Open Source Software: Community-managed versus Commercial
+
 When committing to open-source software (OSS) in a data engineering lifecycle, proper scrutiny is vital. OSS can be divided into two categories:
 
-Community-managed OSS: Success depends on a strong community and vibrant user base. Consider factors such as mindshare, maturity, troubleshooting, project management, team, community management, and roadmap.
-Commercial OSS (COSS): Addresses the drawbacks of hosting and maintaining OSS solutions by offering managed services, typically as cloud SaaS offerings (e.g., Databricks, Confluent, DBT labs). Evaluate factors like value, delivery model, support, releases, sales cycles, and community support.
-Monolith versus Modular: Striking the Right Balance
+* Community-managed OSS: Success depends on a strong community and vibrant user base. Consider factors such as mindshare, maturity, troubleshooting, project management, team, community management, and roadmap.
+* Commercial OSS (COSS): Addresses the drawbacks of hosting and maintaining OSS solutions by offering managed services, typically as cloud SaaS offerings (e.g., Databricks, Confluent, DBT labs). Evaluate factors like value, delivery model, support, releases, sales cycles, and community support.
+
 The debate between monolithic and modular systems in software architecture continues to evolve. Monolithic systems are self-contained and favor simplicity, while modular systems lean towards decoupled, best-of-breed technologies performing tasks at which they are uniquely great.
 
 Each approach has its advantages and disadvantages, and choosing the right one depends on your specific needs and goals. Data modularity enables teams to be agile and adopt new tools, but it comes with increased complexity and management overhead.
 
-Serverless versus Servers: Evaluating Your Options
 When deploying jobs, consider the pros and cons of serverless offerings versus managing your own servers. Serverless solutions enable pay-as-you-go consumption pricing models, while server-based approaches may offer more control and flexibility.
 
 Containers play a significant role in both serverless and microservices, providing many benefits of virtualization without the overhead of carrying an entire operating system kernel. However, they do not provide the same security and isolation as full virtual machines (VMs).
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+
