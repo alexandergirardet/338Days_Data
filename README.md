@@ -751,3 +751,73 @@ Containers play a significant role in both serverless and microservices, providi
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
 
+### Day 33
+
+**Topic:** Fundamentals of Data Engineering Chapter 5 Part 1
+
+As a Data Engineer, your primary role is to take data from source systems, process it, and make it helpful for serving downstream use cases. Before interacting with raw data, it's essential to understand where the data exists, how it's generated, and its characteristics and quirks. This blog post delves into data generation in source systems, providing an in-depth understanding of analog and digital data, various source systems, and the key concepts that Data Engineers should be familiar with.
+
+As data proliferates, the expectation is that a data engineer's role will shift heavily towards understanding the interplay between data sources and destinations. The basic plumbing task of moving data from A to B will dramatically simplify. However, it will still be crucial to understand the nature of data as it's created in source systems.
+
+Sources of Data: How is Data Created?
+Data is an unorganized, context-less collection of facts and figures, created in many ways, both analog and digital.
+
+Analog Data:
+Analog data creation occurs in real-world interactions, often through speech or physical movement. It is represented by a continuous signal and is transient, meaning it cannot be easily replicated or reproduced as it is temporary and changes over time. Transient analog data is characterized by its variability, unpredictability, and sensitivity to environmental factors.
+
+Digital Data:
+Digital data is either created by converting analog data to digital form or is the native product of a digital system. Digital data is represented in a discrete form through 1s and 0s. It is more easily reproducible and more precisely replicated without loss of data.
+
+A data engineer should be familiar with the source system and how its data is generated. You should put in the effort to read the source system's documentation and understand its patterns and quirks.
+
+Source Systems: Main Ideas
+Files and Unstructured Data
+A file is a sequence of bytes, typically stored on a disk. Applications often write data to files, which may store local parameters, events, logs, images, and audio. Common file formats include Excel, CSV, TXT, JSON, and XML.
+
+APIs
+Application programming interfaces (APIs) are a standard way of exchanging data between systems. While an API should abstract away the complexity of dealing with source systems, they can still be complex.
+
+Application Databases (OLTP Systems)
+An application database stores the state of an application. Typically, an application database is an online transaction processing (OLTP) system - a database that reads and writes individual data records at a high rate. OLTP systems are less suited to use cases driven by analytics at scale due to their row-based storage.
+
+ACID
+ACID (atomicity, consistency, isolation, durability) is a set of critical database characteristics that ensure the database maintains a consistent picture of the world, dramatically simplifying the app developer's task. Engineers must understand operating with and without ACID. Some distributed databases use relaxed consistency constraints, such as eventual consistency, to improve performance.
+
+Atomic Transactions, OLTP, and Analytics
+Atomic transactions ensure consistency and integrity of data within a database. Running analytical queries on an OLTP system is not scalable, so data engineers must understand the inner workings of OLTP systems and application backends to set up appropriate integrations with analytics systems without degrading production application performance.
+
+Online Analytical Processing System (OLAP)
+An OLAP system is built to run large analytical queries and is typically inefficient at handling lookups of individual records.
+
+Change Data Capture (CDC)
+CDC is a method for extracting each change event (insert, update, delete) that occurs in a database. It is frequently leveraged to replicate between databases in near real-time or create an event stream for downstream processing. Relational databases often generate an event log stored on the database server that can be processed to create a stream, while NoSQL databases can send a log or event stream to a target storage location.
+
+Logs
+A log captures information about events that occur in systems. All logs track events and event metadata. They should capture who, what, and where. Log encoding can be in binary, semi-structured, or plain text format. Log resolution refers to the amount of event data captured in a log. Log latency refers to whether logs are processed in batch or real-time.
+
+Database Logs
+Database logs ensure the integrity and consistency of databases. Write-ahead logs, which are binary files, enable recoverability. The database server receives writes and update requests to a database table, storing each operation in the log before acknowledging the request.
+
+CRUD
+CRUD (Create, Read, Update, and Delete) is a transactional pattern used in programming and represents the four basic operations of persistent storage.
+
+Insert-Only
+The insert-only pattern retains history directly in a table containing data. Rather than updating records, new records get inserted with a timestamp indicating when they were created. A current state is made by looking at the most recent records based on ID.
+
+Messages and Streams
+In relation to event-driven architecture, you will likely face two terms: message queue and streaming platform. Though often used interchangeably, there is an essential difference between them.
+
+Message
+A message is raw data communicated across two or more systems. A message is typically sent through a message queue from a publisher to a consumer, and once the message is delivered, it is removed from the queue. Messages are discrete and singular signals in an event-driven system.
+
+Stream
+A stream is an append-only log of event records. As events occur, they are accumulated in an ordered sequence, with a timestamp or an ID ordering events. Streams are used when you care about what happened over many events. Due to the append-only nature of streams, records in a stream are persisted over a long retention window.
+
+Types of Time
+When we view data as continuous and expect to consume it shortly after production, time becomes an essential consideration for all data ingestion. The key types of time are event time, ingestion time, and process time. Recording these various times in an automated way will enable more effective monitoring along your data workflows, allowing you to identify bottlenecks and optimize processes.
+
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+
