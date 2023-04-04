@@ -774,50 +774,78 @@ Source Systems: Main Ideas
 Files and Unstructured Data
 A file is a sequence of bytes, typically stored on a disk. Applications often write data to files, which may store local parameters, events, logs, images, and audio. Common file formats include Excel, CSV, TXT, JSON, and XML.
 
-APIs
 Application programming interfaces (APIs) are a standard way of exchanging data between systems. While an API should abstract away the complexity of dealing with source systems, they can still be complex.
 
-Application Databases (OLTP Systems)
 An application database stores the state of an application. Typically, an application database is an online transaction processing (OLTP) system - a database that reads and writes individual data records at a high rate. OLTP systems are less suited to use cases driven by analytics at scale due to their row-based storage.
 
-ACID
 ACID (atomicity, consistency, isolation, durability) is a set of critical database characteristics that ensure the database maintains a consistent picture of the world, dramatically simplifying the app developer's task. Engineers must understand operating with and without ACID. Some distributed databases use relaxed consistency constraints, such as eventual consistency, to improve performance.
 
-Atomic Transactions, OLTP, and Analytics
 Atomic transactions ensure consistency and integrity of data within a database. Running analytical queries on an OLTP system is not scalable, so data engineers must understand the inner workings of OLTP systems and application backends to set up appropriate integrations with analytics systems without degrading production application performance.
 
-Online Analytical Processing System (OLAP)
 An OLAP system is built to run large analytical queries and is typically inefficient at handling lookups of individual records.
 
 Change Data Capture (CDC)
 CDC is a method for extracting each change event (insert, update, delete) that occurs in a database. It is frequently leveraged to replicate between databases in near real-time or create an event stream for downstream processing. Relational databases often generate an event log stored on the database server that can be processed to create a stream, while NoSQL databases can send a log or event stream to a target storage location.
 
-Logs
 A log captures information about events that occur in systems. All logs track events and event metadata. They should capture who, what, and where. Log encoding can be in binary, semi-structured, or plain text format. Log resolution refers to the amount of event data captured in a log. Log latency refers to whether logs are processed in batch or real-time.
 
-Database Logs
 Database logs ensure the integrity and consistency of databases. Write-ahead logs, which are binary files, enable recoverability. The database server receives writes and update requests to a database table, storing each operation in the log before acknowledging the request.
 
-CRUD
 CRUD (Create, Read, Update, and Delete) is a transactional pattern used in programming and represents the four basic operations of persistent storage.
 
-Insert-Only
 The insert-only pattern retains history directly in a table containing data. Rather than updating records, new records get inserted with a timestamp indicating when they were created. A current state is made by looking at the most recent records based on ID.
 
-Messages and Streams
 In relation to event-driven architecture, you will likely face two terms: message queue and streaming platform. Though often used interchangeably, there is an essential difference between them.
 
-Message
 A message is raw data communicated across two or more systems. A message is typically sent through a message queue from a publisher to a consumer, and once the message is delivered, it is removed from the queue. Messages are discrete and singular signals in an event-driven system.
 
-Stream
 A stream is an append-only log of event records. As events occur, they are accumulated in an ordered sequence, with a timestamp or an ID ordering events. Streams are used when you care about what happened over many events. Due to the append-only nature of streams, records in a stream are persisted over a long retention window.
 
-Types of Time
 When we view data as continuous and expect to consume it shortly after production, time becomes an essential consideration for all data ingestion. The key types of time are event time, ingestion time, and process time. Recording these various times in an automated way will enable more effective monitoring along your data workflows, allowing you to identify bottlenecks and optimize processes.
-
 
 **Content:** Fundamentals of Data Engineering
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
 
+### Day 34
+
+**Topic:** Fundamentals of Data Engineering Chapter 5 Part 2
+
+Database Management Systems (DBMS)
+
+A DBMS consists of several key components:
+
+Storage Engine: Handles the organization and storage of data on disk, ensuring efficient retrieval and modification.
+Query Optimizer: Responsible for analyzing queries and selecting the most efficient execution plan to optimize performance.
+Disaster Recovery: Ensures the protection and recovery of data in case of failures or disasters.
+Indexes and Lookups
+
+Understanding the types of indexes your database uses and the best patterns for designing and managing them is essential. Common index types include B-trees and log-structured merge-trees (LSM). Efficient extraction of information is crucial for performance and resource utilization.
+
+It's important to know the scaling strategy of a database, whether it scales with demand, and if it scales vertically or horizontally. Vertical scaling involves adding more resources to a single server, while horizontal scaling distributes the load across multiple servers.
+
+Databases may be fully consistent or support relaxed consistency models, such as eventual consistency. Optional consistency modes for reads and writes, like strongly consistent reads, may also be available.
+
+Relational databases store data in tables with rows and columns, and each row has the same schema. They are typically ACID compliant, ensuring data consistency, and are suitable for storing rapidly changing application states.
+
+NoSQL databases prioritize performance, scalability, and schema flexibility over relational constraints. They often abandon strong consistency, joins, or fixed schema. Types of NoSQL databases include:
+
+Key-Value: A simple and scalable type of NoSQL database that retrieves records using a unique key.
+Document: Similar to key-value stores, but with support for nested objects, typically stored in a JSON-like format.
+Wide-Column: Optimized for storing massive amounts of data with high transaction rates and extremely low latency.
+Graph: Store data in a mathematical graph structure, suitable for analyzing connectivity between elements.
+Search: Non-relational databases designed for searching complex and straightforward semantic and structural characteristics of data.
+Time-Series: Optimized for retrieving and processing time-series data, often used in IoT and event-driven applications.
+APIs
+
+APIs, particularly those built around HTTP, are essential for data engineering. Key types of APIs include:
+
+REST: Representational State Transfer, a stateless interaction model, where each call is independent and self-contained.
+GraphQL: Allows more flexible and expressive queries than REST APIs, retrieving multiple data models in a single request.
+Webhooks: Event-based data transmission patterns that enable real-time communication based on events.
+RPC and gRPC: Remote procedure calls that allow running procedures on remote systems, abstracting away network complexity, and promoting efficient code writing.
+By diving deeper into the characteristics and trade-offs of various database technologies and APIs, data engineers can make more informed decisions when designing and managing efficient, scalable systems. This knowledge lays the foundation for building robust data engineering solutions capable of adapting to the ever-evolving landscape of data-driven applications.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
