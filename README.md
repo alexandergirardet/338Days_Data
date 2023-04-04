@@ -811,7 +811,7 @@ When we view data as continuous and expect to consume it shortly after productio
 
 **Topic:** Fundamentals of Data Engineering Chapter 5 Part 2
 
-Database Management Systems (DBMS)
+A data engineer should have a deep understanding of upstream source systems in which their pipelines depend on. These technologies will change over time, but there are key ideas that will remain the same. We start with Database Management Systems (DBMS).
 
 A DBMS consists of several key components:
 
