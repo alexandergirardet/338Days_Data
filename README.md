@@ -848,4 +848,5 @@ By diving deeper into the characteristics and trade-offs of various database tec
 
 **Content:** Fundamentals of Data Engineering
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/Fundamentals_of_Data_engineering_Chapter_4.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
+
