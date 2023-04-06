@@ -850,3 +850,23 @@ By diving deeper into the characteristics and trade-offs of various database tec
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
 
+
+### Day 35
+
+**Topic:** Fundamentals of Data Engineering Chapter 5 Part 3
+
+Data sharing has become increasingly important in the modern data-driven world. With the advent of cloud data sharing, multitenant systems have emerged that support sharing data among tenants, allowing organizations to manage their data and share it selectively with other units. This facilitates data decentralization, which streamlines data pipelines within an organization. Additionally, data marketplaces have become centralized platforms for buying and selling data, further enabling collaboration and innovation.
+
+Event-driven architectures are becoming more popular due to the rise of data apps, which integrate real-time analytics directly into applications. Message queues and event-streaming platforms are key components of such architectures, as they enable asynchronous communication between discrete systems, decoupling them from each other. Message queues support a publish and subscribe model, where data is published to a queue and delivered to one or more subscribers. Designing for out-of-order message delivery, scalability, and fault tolerance are critical aspects to consider when implementing message queues.
+
+Event streaming platforms, on the other hand, ingest and process data in an ordered log of records. They retain data for a certain period, allowing for replaying messages from a past point in time. These platforms use topics, stream partitions, and fault tolerance mechanisms to ensure the robustness and scalability of the system. Data engineers should be mindful of potential issues like hotspotting when designing event streaming systems.
+
+Collaboration with various stakeholders is crucial in data engineering. Systems stakeholders, such as software engineers and application developers, build and maintain the source systems, while data stakeholders own and control access to the data. Establishing data contracts and service level agreements with data providers can help set expectations and ensure data quality. Understanding data management practices in source systems, including data governance, data quality, and schema management, is also essential.
+
+Security is a key concern in data engineering. Ensuring data is secure and encrypted in the source system, as well as during transfer and storage, is vital. Data engineers should also consider DataOps principles, like automation, observability, and incident response, to achieve operational excellence throughout the entire stack.
+
+Finally, it's important to understand the upstream data architecture and how it impacts the data engineering process. This includes reliability, durability, availability, and the people involved. Data orchestration, which requires the correct network access, authentication, and authorization, plays a significant role in ensuring seamless access to source systems. Software engineering considerations, such as networking, access patterns, parallelization, and deployment, should not be overlooked.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
