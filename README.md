@@ -58,24 +58,7 @@ Stanford Course in Mathematical Thinking  | :construction: |
 Bootcamp  | Status of Completion
 ------------- | -------------
 Data Engineering Zoomcamp  | :construction:
-Machine Learning Zoomcamp  | 
-
-### Data Engineering Concepts
-
-Topic Name  | Post #
-------------- | -------------
-DBT | [29]
-Airflow | [10]
-BigQuery | [11]
-
-### Articles
-
-Article  | # 
-------------- | -------------
-How I passed the Associate Cloud Engineer Exam | 
-
-
-# Journal
+Machine Learning Zoomcamp  |
 
 ### Day 1
 
