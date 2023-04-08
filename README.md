@@ -853,6 +853,10 @@ Finally, it's important to understand the upstream data architecture and how it 
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
 
+### Day 36
+
+**Topic:** Data engineering in GCP. Storage solutions
+
 When it comes to data storage and management in Google Cloud Platform (GCP), there is a wide range of options to choose from. This blog post aims to provide an in-depth understanding of various data storage options in GCP, as well as key considerations and best practices for working with data.
 
 Understanding Data Storage Options in GCP
@@ -922,7 +926,7 @@ Perform fast, in-memory computations on large datasets for real-time analytics a
 Gaming leaderboards
 Maintain and update gaming leaderboards with low latency and high throughput
 
-**Content:** Fundamentals of Data Engineering
+**Content:** Cloud Guru Professional Data Engineer
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
 
