@@ -852,3 +852,51 @@ Finally, it's important to understand the upstream data architecture and how it 
 **Content:** Fundamentals of Data Engineering
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
+
+When it comes to data storage and management in Google Cloud Platform (GCP), there is a wide range of options to choose from. This blog post aims to provide an in-depth understanding of various data storage options in GCP, as well as key considerations and best practices for working with data.
+
+Understanding Data Storage Options in GCP
+To make an informed decision on where to store your data in GCP, it is essential to understand the key differences between various storage options:
+
+Cloud Storage: Ideal for unstructured object storage. Provides regional, dual-region, or multi-region access with different storage classes such as standard, nearline, coldline, and archive.
+
+Cloud BigTable: Petabyte-scale NoSQL database designed for wide column high write volume data like time-series, transactional, or IoT data.
+
+BigQuery: Petabyte-scale analytics data warehouse that supports fast SQL queries across large datasets.
+
+Cloud Spanner: Global SQL-based relational database offering horizontal scalability, high availability, and strong consistency.
+
+Cloud SQL: Managed MySQL and PostgreSQL instances with built-in backups, replicas, and failover. It is vertically scalable.
+
+Firestore: Fully-managed NoSQL document database with large collections of small JSON documents, realtime database functionality, and strong consistency.
+
+Cloud Memorystore: Managed Redis instances used as an in-memory DB, cache, or message broker. Provides built-in high availability and is vertically scalable.
+
+Key Considerations for Managing Data
+When working with data in GCP, it is essential to consider:
+
+Sources and sinks: Ensure the data source format is appropriate for the data sink and whether any preparation work is required.
+Structured and unstructured data: Determine how data will be processed and stored, ensuring structured data conforms to the correct model.
+Batched and streaming: Identify if pipelines are required for data ingestion and if latency and time-windowing are a concern.
+Data Modelling
+Structured data requires a consistent model that may involve data preparation or transformation. The stages of data modeling include:
+
+Conceptual: Identify entities, their attributes, and relationships in the data.
+Logical: Determine the structure of entities and if the model can be normalized.
+Physical: Implement the database by defining keys and indexes.
+Cloud Storage Features
+Cloud Storage offers fully managed object storage for unstructured data with multiple storage classes and life cycle management. It provides secure and durable storage, with objects being stored as opaque data. Access to Google Cloud Storage can be achieved through the HTTP API, GCP console, SDKs, or gsutil.
+
+Service Accounts and Access Control
+Identity & Access management in GCP is controlled by policies containing members and roles. Service accounts are specific accounts created for specific tasks, and their identities can be assumed by applications or workloads. Access control can be managed through IAM for bulk access to buckets and ACLs for granular access.
+
+Data Transfer Services
+GCP offers various data transfer services, including:
+
+Cloud Storage Transfer Service: Automates the transfer of data from sources like AWS S3 or HTTP to Google Cloud Storage.
+BigQuery Data Transfer Service: Automates data transfer to BigQuery from sources like Cloud Storage, YouTube, or S3.
+Transfer Appliance: A physical rackable storage device for transferring large amounts of data to GCP.
+Cloud SQL Features and High Availability
+Cloud SQL offers managed SQL instances with multiple database engines, scalability, and availability. It provides automated backups, instance restores, and point-in-time recovery. High availability can be achieved through regional and zonal replication.
+
+Firestore and Data
