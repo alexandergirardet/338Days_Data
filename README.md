@@ -899,4 +899,31 @@ Transfer Appliance: A physical rackable storage device for transferring large am
 Cloud SQL Features and High Availability
 Cloud SQL offers managed SQL instances with multiple database engines, scalability, and availability. It provides automated backups, instance restores, and point-in-time recovery. High availability can be achieved through regional and zonal replication.
 
-Firestore and Data
+Composite Index: A composite index is an index that consists of two or more columns in a database table. These indexes are useful when you need to search or sort data based on multiple columns. Composite indexes can improve query performance by allowing the database engine to scan fewer rows when processing a query.
+
+Cloud Memorystore is a managed Redis and Memcached service that provides a fully managed in-memory data store service built on Google Cloud Platform. It's designed for use cases that require low latency and high throughput, such as caching, real-time analytics, and gaming leaderboards.
+
+Key features of Cloud Memorystore:
+Fully managed Redis instances
+Automatically handles patching, updates, and backups
+In-memory database
+Provides fast access to data by storing it in memory instead of disk
+Cache or message broker
+Can be used as a cache for frequently accessed data or as a message broker for pub/sub messaging
+Built-in high availability
+Supports replication across multiple zones for high availability
+Vertically scalable
+Allows for easy scaling of memory and network bandwidth
+Use cases for Cloud Memorystore:
+Caching
+Store frequently accessed data in memory to reduce latency and improve application performance
+Real-time analytics
+Perform fast, in-memory computations on large datasets for real-time analytics and insights
+Gaming leaderboards
+Maintain and update gaming leaderboards with low latency and high throughput
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_data_engineering_chapter_5.pdf)**
+
+
