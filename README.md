@@ -932,7 +932,7 @@ Maintain and update gaming leaderboards with low latency and high throughput
 
 ### Day 37
 
-**Topic:** Data engineering in GCP. Big Data Landscape
+**Topic:** Data engineering in GCP. Big Data Ecosystem
 
 MapReduce is a programming model and a distributed implementation of that model, created at Google to address the challenge of processing massive jobs across data centers over many machines. By abstracting away the distributed systems management work, MapReduce provides a standardized framework for designing solutions for data processing problems. The model handles the parallelization and execution of tasks across several machines, taking care of partitioning, scheduling, fault tolerance, networking, and storage behind the scenes. MapReduce jobs are split into small chunks, using a master and worker cluster model, with failed worker jobs being reassigned and output files partitioned.
 
@@ -946,7 +946,7 @@ Apache Kafka is a distributed streaming platform that allows for the publication
 
 **Content:** Cloud Guru Professional Data Engineer
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/storage_and_databases.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/tree/main/Notes/Data_engineering_bootcamp)**
 
 
 
