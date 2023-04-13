@@ -948,6 +948,9 @@ Apache Kafka is a distributed streaming platform that allows for the publication
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/tree/main/Notes/Data_engineering_bootcamp)**
 
+### Day 38
+
+**Topic:** Data engineering in GCP. Pub/Sub
 
 Pub/Sub is a powerful messaging system that facilitates communication between components in a distributed system. At its core, a message bus acts as a common communication platform, allowing for unified communication protocols and prioritization. This can be beneficial, as it provides a single interface for communication and simplifies the process of controlling and managing messages. However, it can also introduce potential bottlenecks or single points of failure, as well as potential security issues.
 
@@ -964,3 +967,8 @@ In terms of advanced features, Pub/Sub guarantees at-least-once delivery of each
 Although Pub/Sub does not guarantee message ordering, you can use timestamps to ensure the correct order when it matters. For transactional ordering, consider alternative solutions. Pub/Sub stores messages in the nearest region, and you can control this using message storage policies. Keep in mind that this can lead to additional egress fees.
 
 Monitoring is essential for a healthy Pub/Sub system. Key metrics include total utilization in bytes, subscription utilization in bytes, and undelivered messages belonging to a subscription. Access control is equally important, and you can use service accounts for authorization and grant per-topic or per-subscription permissions. Always follow the security principle of least privilege.
+
+**Content:** Cloud Guru Professional Data Engineer
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/tree/main/Notes/Data_engineering_bootcamp)**
+
