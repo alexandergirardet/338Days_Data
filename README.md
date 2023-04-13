@@ -949,4 +949,18 @@ Apache Kafka is a distributed streaming platform that allows for the publication
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/tree/main/Notes/Data_engineering_bootcamp)**
 
 
+Pub/Sub is a powerful messaging system that facilitates communication between components in a distributed system. At its core, a message bus acts as a common communication platform, allowing for unified communication protocols and prioritization. This can be beneficial, as it provides a single interface for communication and simplifies the process of controlling and managing messages. However, it can also introduce potential bottlenecks or single points of failure, as well as potential security issues.
 
+Messaging middleware, such as the Pub/Sub system, serves as a messaging layer between components, ensuring data resilience and reducing dependency between components. This creates loosely coupled and resilient systems, acting as a shock absorber for any unexpected disruptions.
+
+Cloud Pub/Sub is a fully-managed, serverless messaging service that supports multiple publisher and subscriber patterns, at-least-once delivery, and both real-time and batch processing. It integrates seamlessly with other Google Cloud services, such as Cloud Dataflow. Common use cases for Cloud Pub/Sub include distributing workloads, asynchronous workflows, event notifications, distributed logging, and device data streaming.
+
+Pub/Sub supports several messaging patterns, such as one-to-one, one-to-many, and many-to-many. To publish messages, you simply create a message containing your data, send a request to the Pub/Sub API, and specify the topic. To receive messages, create a subscription to a topic, with pull being the default delivery method. Messages must be acknowledged; otherwise, they remain at the top of the queue. Alternatively, you can use push to send messages to an HTTPS endpoint with a valid SSL certificate.
+
+Cloud Pub/Sub offers various integration options, including client libraries, Cloud Dataflow, Cloud Functions, Cloud Run, and Cloud IoT Core. For development purposes, you can also use a local Pub/Sub emulator.
+
+In terms of advanced features, Pub/Sub guarantees at-least-once delivery of each message for every subscription, and undelivered messages are deleted after a specified retention duration. Subscriptions expire after 31 days of inactivity, and new subscriptions with the same name have no relationship to previous subscriptions. Pub/Sub also allows you to seek and retain acknowledged messages for up to 7 days, and create snapshots for easier code deployment.
+
+Although Pub/Sub does not guarantee message ordering, you can use timestamps to ensure the correct order when it matters. For transactional ordering, consider alternative solutions. Pub/Sub stores messages in the nearest region, and you can control this using message storage policies. Keep in mind that this can lead to additional egress fees.
+
+Monitoring is essential for a healthy Pub/Sub system. Key metrics include total utilization in bytes, subscription utilization in bytes, and undelivered messages belonging to a subscription. Access control is equally important, and you can use service accounts for authorization and grant per-topic or per-subscription permissions. Always follow the security principle of least privilege.
