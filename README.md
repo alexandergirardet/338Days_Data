@@ -974,7 +974,7 @@ Monitoring is essential for a healthy Pub/Sub system. Key metrics include total 
 
 ### Day 39
 
-**Topic:** Raw ingredients of storage: Fundamentals of DE Chapter 6 Part 1
+**Topic:** Raw ingredients of storage. Fundamentals of DE Chapter 6 Part 1
 
 As data gets stored multiple times in the Data Engineering lifecycle, it is important to understand the use cases and particularities of available storage solutions in choosing your data architecture. To understand data storage solutions, we will focus on the raw ingredients of storage, which are the lower levels of abstraction that persist across different use cases and solutions. These raw ingredients include HDD, SSD, RAM, Networking, Serialization, Compression, and CPU.
 
