@@ -972,3 +972,26 @@ Monitoring is essential for a healthy Pub/Sub system. Key metrics include total 
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/pub%3Asub.pdf)**
 
+### Day 39
+
+**Topic:** Raw ingredients of storage: Fundamentals of DE Chapter 6 Part 1
+
+As data gets stored multiple times in the Data Engineering lifecycle, it is important to understand the use cases and particularities of available storage solutions in choosing your data architecture. To understand data storage solutions, we will focus on the raw ingredients of storage, which are the lower levels of abstraction that persist across different use cases and solutions. These raw ingredients include HDD, SSD, RAM, Networking, Serialization, Compression, and CPU.
+
+HDDs (Hard Disk Drives) are traditional storage devices that use spinning platters and magnetic heads for reading and writing data. They are cost-effective and offer large storage capacities. However, HDDs have physical limitations, such as slower transfer speeds and seek times, which make them less suitable for use cases requiring low latency and high IOPS (Input/Output Operations Per Second).
+
+On the other hand, SSDs (Solid State Drives) store data in flash memory cells without any moving parts, which allows them to achieve faster transfer speeds and IOPS. While SSDs are more expensive than HDDs, they are popular for OLTP (Online Transaction Processing) systems that require high IOPS.
+
+RAM (Random Access Memory) is volatile memory, meaning it does not store data persistently. It is used in conjunction with CPUs for executing programs and processing data. RAM offers significantly higher transfer speeds and faster retrieval times than SSD storage but is much more expensive. Data engineers need to consider the bandwidth and retrieval latency of RAM when designing storage systems.
+
+In distributed data storage systems, networking and CPUs play a critical role in servicing requests, aggregating reads, and distributing writes. Data engineers must understand how networking affects the systems they build and use, balancing durability and availability against performance and cost benefits.
+
+Serialization is the process of converting data into a standard format suitable for storage or transmission. Data engineers must choose serialization formats and standards that balance interoperability with performance considerations.
+
+Compression reduces the size of data, which can lead to cost savings and improved performance. However, compression algorithms interact with other aspects of storage systems in complex ways, and compressing and decompressing data entails extra time and resource consumption.
+
+Caching involves storing frequently or recently accessed data in a fast-access layer to improve performance. The faster the cache, the higher the cost and the less storage space available. Caches are critical for data serving, processing, and transformation. Archive storage, on the other hand, provides inferior access characteristics at lower costs, making it suitable for long-term storage of infrequently accessed data.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/pub%3Asub.pdf)**
