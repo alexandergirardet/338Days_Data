@@ -994,4 +994,4 @@ Caching involves storing frequently or recently accessed data in a fast-access l
 
 **Content:** Fundamentals of Data Engineering
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/pub%3Asub.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
