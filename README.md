@@ -995,3 +995,28 @@ Caching involves storing frequently or recently accessed data in a fast-access l
 **Content:** Fundamentals of Data Engineering
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
+
+
+### Day 40
+
+**Topic:** Data Storage systems. Fundamentals of DE Chapter 6 Part 2
+
+Data storage systems are the abstraction level above raw storage ingredients, such as magnetic disks. As data storage and access patterns become more complex, distributed storage is necessary. Distributed storage involves storing data on multiple servers, enabling redundancy, scalability, and faster processing. Data engineers must be aware of the consistency paradigms in distributed systems and make decisions regarding consistency at the database technology level, the configuration parameters for the database, and at the individual query level.
+
+Data consistency refers to the concept of data reflecting the true state of the objects or entities it represents. In distributed systems, where data is partitioned or replicated across servers located in different geographic areas, consistency becomes a challenge. There are two main consistency patterns: ACID and BASE. ACID transactions ensure strong consistency, while BASE transactions prioritize availability and partition tolerance over strict consistency.
+
+Eventual consistency is a consistency paradigm that allows data to be temporarily inconsistent across nodes over time, eventually bringing the data into a consistent state. Partition tolerance is the ability of a distributed system to continue operating in the case of a network outage or failure that prevents communication between nodes. On the other hand, strong consistency ensures that any reads against the database return consistent values, at the expense of higher latency.
+
+Storage formatting is a way of storing data on disk in a way that allows easy access. There are three types of storage formatting: file storage, block storage, and object storage. File storage organizes files into a directory tree, while block storage is the raw storage provided by SSDs and HDDs. Object storage is similar to file storage, but with key differences.
+
+File storage systems can be found on local disk partitions, network-attached storage (NAS) systems, or cloud file system services. Local disk storage supports full read-after-write consistency, while NAS systems provide a centralized and shared storage space for files. Cloud file system services, such as Amazon Elastic File System (EFS), offer a fully managed file system for use with multiple cloud VMs and applications.
+
+Block storage is used in transactional databases and as the default option for OS boot disks on cloud VMs. Redundant arrays of independent disks (RAID) parallelize storage on a single server, increasing redundancy and performance. Storage access networks (SAN) provide virtualized block storage devices over a network, typically from a storage pool, allowing for enhanced performance, availability, and durability.
+
+Cloud virtualized block storage solutions, such as Amazon Elastic Block Store (EBS), offer similar benefits to SAN but abstract away the complexity of SAN clusters and networking details. EBS stores data separately from the instance host server but in the same zone, supporting high performance and low latency. EBS is suitable for use cases such as databases where data persistence is important.
+
+Cloud providers offer block storage volumes that are physically attached to the host server running a VM. These storage volumes are generally low cost and included with the price of the VM. Local instance volumes are useful for ephemeral jobs, such as consuming data from S3, processing it locally, and storing it back in S3.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
