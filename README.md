@@ -996,7 +996,6 @@ Caching involves storing frequently or recently accessed data in a fast-access l
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
 
-
 ### Day 40
 
 **Topic:** Data Storage systems. Fundamentals of DE Chapter 6 Part 2
@@ -1016,6 +1015,36 @@ Block storage is used in transactional databases and as the default option for O
 Cloud virtualized block storage solutions, such as Amazon Elastic Block Store (EBS), offer similar benefits to SAN but abstract away the complexity of SAN clusters and networking details. EBS stores data separately from the instance host server but in the same zone, supporting high performance and low latency. EBS is suitable for use cases such as databases where data persistence is important.
 
 Cloud providers offer block storage volumes that are physically attached to the host server running a VM. These storage volumes are generally low cost and included with the price of the VM. Local instance volumes are useful for ephemeral jobs, such as consuming data from S3, processing it locally, and storing it back in S3.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
+
+### Day 41
+
+**Topic:** Data Storage systems. Fundamentals of DE Chapter 6 Part 3
+
+Cloud virtualized block storage, such as Elastic Block Store (EBS), offers engineers an alternative to traditional Storage Area Network (SAN) clusters by managing the storage separately from the instance host server while maintaining high performance and low latency. EBS ensures data persistence, making it suitable for use cases like databases that require data to be stored even when an EC2 instance shuts down or fails.
+
+EBS performance metrics include Input/Output Operations Per Second (IOPS) and throughput. It replicates data across at least two separate host machines, protecting data from disk failures, and allows point-in-time snapshots while the drive is in use.
+
+Local instance volumes offered by cloud providers are physically attached to the host server running a virtual machine (VM). They are low-cost and included with the price of the VM but lack the advanced virtualization features of EBS. However, they are useful as a local cache for ephemeral jobs, such as consuming data from S3, processing it locally, and storing it back in S3. It is essential to plan for worst-case scenarios, such as local disk failure or VM shutdown, when considering local storage.
+
+Object storage has become increasingly important, with services like Amazon S3 and Google Cloud Storage (GCS) widely used. It is a key-value store for immutable data objects and does not support append operations or random writes. Instead, objects are written as a stream of bytes, and once written, the data is immutable. This makes object storage suitable for serving high volume web traffic or delivering data to highly parallel distributed query engines.
+
+Cloud object storage plays a crucial role in separating compute and storage, allowing engineers to process data with ephemeral clusters and scale these clusters up and down on demand. This provides virtually limitless storage, as data is only limited by the number of disks in cloud environments.
+
+Object stores are ideal repositories for unstructured data in any format, including raw text, images, videos, and audio, and can be used in machine learning pipelines. However, they do not handle update operations as well as transactional databases.
+
+Cloud vendors offer various storage classes and tiers, with some offering discounted storage pricing in exchange for reduced access or durability. Additionally, object store synchronization solutions like s3fs and Amazon S3 File Gateway have become popular, allowing users to mount an S3 bucket as local storage.
+
+Cache and memory-based storage systems, such as Memcached and Redis, offer low-latency results and reduce load on backend systems. These systems are designed for caching database query results, API call responses, and more.
+
+The Hadoop Distributed File System (HDFS) is similar to object storage but with a key difference: compute and storage are on the same node. It is still used in legacy systems and sometimes with Spark clusters.
+
+Streaming storage systems, like Kafka, have different requirements compared to non-streaming data storage. They are designed for temporal data storage and support replay, allowing a range of historical stored data to be returned.
+
+Indexes, partitioning, and clustering are important concepts in data storage. Indexes allow for fast lookup of individual records, while partitions and clustering allow for faster scan speeds by reducing the amount of data that needs to be scanned. Columnar serialization in databases enables scans on only the required data for a particular query, further improving performance.
 
 **Content:** Fundamentals of Data Engineering
 
