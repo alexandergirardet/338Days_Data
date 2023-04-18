@@ -1067,3 +1067,5 @@ Apache Beam's core transforms include ParDo, GroupByKey, CoGroupByKey, Combine, 
 In terms of security and access, Dataflow pipelines can be run locally for testing or using the Cloud Dataflow managed service. Google Cloud Platform (GCP) service accounts are used for the Cloud Dataflow service and worker instances. Access and security mechanisms include submission of the pipeline, evaluation of the pipeline, and accessing telemetry or metrics. Dataflow also supports regional endpoints and machine learning integration.
 
 Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the BigQuery web UI. It integrates with Apache Beam SQL, with Cloud Dataflow SQL being the GCP version of Apache Beam SQL. This integration facilitates the development of complex data processing pipelines while leveraging the powerful capabilities of Dataflow.
+
+https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/dataflow.pdf
