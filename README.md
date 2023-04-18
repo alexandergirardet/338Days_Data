@@ -1049,3 +1049,21 @@ Indexes, partitioning, and clustering are important concepts in data storage. In
 **Content:** Fundamentals of Data Engineering
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
+
+Dataflow is a powerful ETL (Extract, Transform, Load) tool used to transform data, providing a fully managed and serverless experience. It leverages the open-source Apache Beam SDK and supports both real-time and batch processing, seamlessly handling autoscaling of worker resources. Each Dataflow pipeline has a source and a sink, where data is ingested from and output to, respectively.
+
+The driver program, written in either Python or Java, defines the full set of transformations the data undergoes from ingestion to final output. This program is submitted to the runner, which manages the execution of the pipeline and translates it for the back-end. Dataflow represents both the driver program and the runner.
+
+PCollections (short for Parallel Collections) are used to represent data as it is transformed in the pipeline. A PCollection is a potentially distributed multi-element dataset that can represent both batch and streaming data. It is created from an external data source and used as input for transforms, which output new PCollections. Multiple transforms are combined to define the pipeline.
+
+When designing a pipeline, it is essential to understand the necessary transformations, the location of data, and the input and output data structures and formats. Pipelines can be structured as linear, branching, or merging, and they can have multiple sources. Each Dataflow pipeline represents a Directed Acyclic Graph (DAG), a graph with a finite number of vertices and edges with no directed cycles.
+
+Creating a Dataflow pipeline involves creating a pipeline object, creating a PCollection using a read or create transform, applying multiple transforms as required, writing out the final PCollection to the pipeline sink, and executing the pipeline using a pipeline runner.
+
+Dataflow pipeline concepts include ParDo, a transform for generic parallel processing, and aggregation, where user-defined functions can be applied. PCollection elements must be of the same type, and they are immutable and unchanging. Each element of a PCollection is associated with a timestamp.
+
+Apache Beam's core transforms include ParDo, GroupByKey, CoGroupByKey, Combine, Flatten, and Partition. Advanced Dataflow concepts include event time, window types, watermarks, and triggers. Event time is the time at which a data element occurs, while window types include fixed time windows, sliding windows, per-session windows, and single global windows.
+
+In terms of security and access, Dataflow pipelines can be run locally for testing or using the Cloud Dataflow managed service. Google Cloud Platform (GCP) service accounts are used for the Cloud Dataflow service and worker instances. Access and security mechanisms include submission of the pipeline, evaluation of the pipeline, and accessing telemetry or metrics. Dataflow also supports regional endpoints and machine learning integration.
+
+Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the BigQuery web UI. It integrates with Apache Beam SQL, with Cloud Dataflow SQL being the GCP version of Apache Beam SQL. This integration facilitates the development of complex data processing pipelines while leveraging the powerful capabilities of Dataflow.
