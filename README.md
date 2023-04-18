@@ -1050,6 +1050,10 @@ Indexes, partitioning, and clustering are important concepts in data storage. In
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
 
+### Day 42
+
+**Topic:** Data engineering in GCP. Dataflow
+
 Dataflow is a powerful ETL (Extract, Transform, Load) tool used to transform data, providing a fully managed and serverless experience. It leverages the open-source Apache Beam SDK and supports both real-time and batch processing, seamlessly handling autoscaling of worker resources. Each Dataflow pipeline has a source and a sink, where data is ingested from and output to, respectively.
 
 The driver program, written in either Python or Java, defines the full set of transformations the data undergoes from ingestion to final output. This program is submitted to the runner, which manages the execution of the pipeline and translates it for the back-end. Dataflow represents both the driver program and the runner.
@@ -1068,4 +1072,6 @@ In terms of security and access, Dataflow pipelines can be run locally for testi
 
 Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the BigQuery web UI. It integrates with Apache Beam SQL, with Cloud Dataflow SQL being the GCP version of Apache Beam SQL. This integration facilitates the development of complex data processing pipelines while leveraging the powerful capabilities of Dataflow.
 
-https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/dataflow.pdf
+**Content:** Cloud Guru Professional Data Engineer
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/dataflow.pdf)**
