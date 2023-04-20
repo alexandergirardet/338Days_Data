@@ -1074,3 +1074,12 @@ Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the 
 **Content:** Cloud Guru Professional Data Engineer
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/dataflow.pdf)**
+
+
+### Day 43
+
+**Topic:** Passed my GCP professional Data Engineering Exam
+
+This morning I passed my GCP professional Data Engineering Exam. I have not yet received the certification, but I am happy to update that I have received a passing grade. The exam requires in depth knowledge about GCP services relating to creating Data engineering pipelines and how to make ML pipelines. It certainly reflects the future growing need of Data Engineers to understand ML terminology, and the inner workings of ML pipelines, as more value is added downstream through the implementations of these models at scale. As I continue to progress in my journey I have consistently found myself attracted to the world of Machine Learning and NLP in particular as I believe it has many applications in things of interest for me. However, due to my degree in Finance and not a STEM subject my mathematic abilities are slightly subpar relative to the rest of the practioners in field. Over the next few months I will be focusing my efforts on developing my abilitites in Linear Algebra, Applied statistics, and Calculus. My progress in this area will be showcased by completing the Mathematics for Machine Learning book, as well as all the exercises involved. I also understand that ML Ops and operationalizing ML models is the largest concern for companies over the next few years so I have I gradually move towards developing my DevOps knowledge and gain the ML Engineering Certification, as well as complete personal projects in this field. 
+
+
