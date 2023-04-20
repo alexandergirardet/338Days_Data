@@ -49,7 +49,7 @@ Finance NLP analyst  | NLP and ML Engineering |
 Certificate  | Status of Completion | Proof
 ------------- | ------------- | -------------
 Google Associate Cloud Engineer  | :white_check_mark: | https://www.credential.net/fdd64e5c-48d5-459d-99e5-4df6828e3941#gs.qsdqi3
-Google Cloud Professional Data Engineer | | 
+Google Cloud Professional Data Engineer | :white_check_mark: | 
 Google Cloud Professional Machine Learning Engineer  | | 
 
 ### Bootcamps
