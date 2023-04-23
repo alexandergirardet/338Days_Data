@@ -31,7 +31,6 @@ Books  | Status of Completion
 Mathematics for the non-mathematician  | :construction:
 Hands On Machine Learning with Scikit Learn, Keras and TensorFlow | 
 Designing Data-Intensive Applications | :construction:
-Structure and Interpretation of Computer Programs | :construction:
 Machine Learning Engineering | 
 Fundamentals of Data Engineering | :construction:
 Kimball's Data Warehouse Toolkit | :construction:
