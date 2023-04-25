@@ -1124,6 +1124,6 @@ Data migration: Most data systems perform best when data is moved in bulk rather
 
 **Content:** Fundamentals of Data Engineering
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_de_chapter_7.pdf)**
 
 
