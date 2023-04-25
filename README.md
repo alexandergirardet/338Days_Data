@@ -1081,4 +1081,47 @@ Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the 
 
 This morning I passed my GCP professional Data Engineering Exam. I have not yet received the certification, but I am happy to update that I have received a passing grade. The exam requires in depth knowledge about GCP services relating to creating Data engineering pipelines and how to make ML pipelines. It certainly reflects the future growing need of Data Engineers to understand ML terminology, and the inner workings of ML pipelines, as more value is added downstream through the implementations of these models at scale. As I continue to progress in my journey I have consistently found myself attracted to the world of Machine Learning and NLP in particular as I believe it has many applications in things of interest for me. However, due to my degree in Finance and not a STEM subject my mathematic abilities are slightly subpar relative to the rest of the practioners in field. Over the next few months I will be focusing my efforts on developing my abilitites in Linear Algebra, Applied statistics, and Calculus. My progress in this area will be showcased by completing the Mathematics for Machine Learning book, as well as all the exercises involved. I also understand that ML Ops and operationalizing ML models is the largest concern for companies over the next few years so I have I gradually move towards developing my DevOps knowledge and gain the ML Engineering Certification, as well as complete personal projects in this field. 
 
+### Day 44 
+
+**Topic:** Data Storage systems. Fundamentals of DE Chapter 7 Part 1
+
+Data ingestion is the process of moving data from one place to another, involving data movement from source systems into storage in the data engineering lifecycle, with ingestion as an intermediate step. It is important to differentiate data ingestion from data integration, as the latter combines data from disparate sources into a new dataset, while data ingestion is the data movement from point A to B.
+
+A data pipeline is the combination of architecture, systems, and processes that move data through the stages of the data engineering lifecycle. A data pipeline should be flexible enough to fit any needs along the data engineering lifecycle.
+
+Key Engineering Considerations for the Ingestion Phase
+
+Asking the right questions and considering various factors are crucial when designing and implementing the ingestion phase in a data pipeline. Some questions to consider are:
+
+What’s the use case for the data I’m ingesting?
+Can I reuse this data and avoid ingesting multiple versions of the same dataset?
+Where is the data going? What’s the destination?
+How often should the data be updated from the source?
+What is the expected data volume?
+What format is the data in? Can downstream storage and transformation accept this format?
+Is the source data in good shape for immediate downstream use? Is the data of good quality? What post-processing is required to serve it? What are data-quality risks?
+Does the data require in-flight processing for downstream ingestion if the data is from a streaming source?
+To better understand and make decisions during the ingestion phase, several considerations are essential:
+
+Bounded versus unbounded: Unbounded data is data as it exists in reality, as events happen, either sporadically or continuously, ongoing and flowing. Bounded data is a convenient way of bucketing data across some sort of boundary, such as time.
+Frequency: Data can be ingested in batch, micro-batch, or real-time.
+Synchronous versus asynchronous: Synchronous ingestion involves complex dependencies and tightly coupled processes, while asynchronous ingestion allows each stage of the processing pipeline to process data items as they become available in parallel.
+Serialization versus deserialization: Moving data from source to destination involves serialization and deserialization, which means encoding data from a source and preparing data structures for transmission and intermediate storage stages.
+Throughput and scalability: Data ingestion should never be a bottleneck, and design your system to scale and shrink to flexibly match the desired data throughput.
+Reliability and durability: Reliability entails high up-time and proper fail-over for ingestion systems, while durability ensures that data isn’t lost or corrupted.
+Payload: A payload is the dataset you’re ingesting and has characteristics such as kind, shape, size, schema and data types, and metadata.
+Push versus pull patterns: A push strategy involves a source system sending data to a target, while a pull strategy entails a target reading data directly from a source. Polling involves periodically checking a data source for any changes.
+Batch Ingestion Considerations
+
+In batch ingestion, data is ingested by taking a subset of data in a source system, based either on a time interval or the size of the accumulated data. Some patterns to consider for batch ingestion are:
+
+Snapshot or differential extraction: Choose to capture the full snapshots of a source system or differential (incremental) updates.
+File-based export and ingestion: Data is serialized into files in an exchangeable format and provided to an ingestion system.
+ETL versus ELT: Decide whether to transform data before loading it into a storage destination or simply load it into storage for future transformation.
+Inserts, updates, and batch size: Batch-oriented systems perform poorly when users attempt to
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_DE_chapter_6.pdf)**
+
 
