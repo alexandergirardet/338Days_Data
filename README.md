@@ -1118,7 +1118,9 @@ In batch ingestion, data is ingested by taking a subset of data in a source syst
 Snapshot or differential extraction: Choose to capture the full snapshots of a source system or differential (incremental) updates.
 File-based export and ingestion: Data is serialized into files in an exchangeable format and provided to an ingestion system.
 ETL versus ELT: Decide whether to transform data before loading it into a storage destination or simply load it into storage for future transformation.
-Inserts, updates, and batch size: Batch-oriented systems perform poorly when users attempt to
+Inserts, updates, and batch size: Batch-oriented systems perform poorly when users attempt to perform many small-batch operations rather than a smaller number of large operations. It is essential to understand the limits and characteristics of your tools.
+
+Data migration: Most data systems perform best when data is moved in bulk rather than as individual rows or events. File or object storage is often an excellent intermediate stage for transferring data.
 
 **Content:** Fundamentals of Data Engineering
 
