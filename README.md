@@ -50,6 +50,7 @@ Certificate  | Status of Completion | Proof
 Google Associate Cloud Engineer  | :white_check_mark: | https://www.credential.net/fdd64e5c-48d5-459d-99e5-4df6828e3941#gs.qsdqi3
 Google Cloud Professional Data Engineer | :white_check_mark: | https://google.accredible.com/734126f1-d0b7-4a5f-b807-c4d7e328dda1
 Google Cloud Professional Machine Learning Engineer  | | 
+ChatGPT Prompt Engineering for Developers | :construction: |
 
 ### Bootcamps
 
