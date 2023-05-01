@@ -928,7 +928,7 @@ Maintain and update gaming leaderboards with low latency and high throughput
 
 **Content:** Cloud Guru Professional Data Engineer
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/storage_and_databases.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Professional_DE_cert/storage_and_databases.pdf)**
 
 ### Day 37
 
