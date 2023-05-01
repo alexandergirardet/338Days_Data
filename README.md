@@ -970,7 +970,7 @@ Monitoring is essential for a healthy Pub/Sub system. Key metrics include total 
 
 **Content:** Cloud Guru Professional Data Engineer
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/pub%3Asub.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Professional_DE_cert/pub%3Asub.pdf)**
 
 ### Day 39
 
