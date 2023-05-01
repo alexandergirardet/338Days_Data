@@ -1074,7 +1074,7 @@ Cloud Dataflow SQL allows users to develop and run Cloud Dataflow jobs from the 
 
 **Content:** Cloud Guru Professional Data Engineer
 
-**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Data_engineering_bootcamp/dataflow.pdf)**
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/Professional_DE_cert/dataflow.pdf)**
 
 
 ### Day 43
