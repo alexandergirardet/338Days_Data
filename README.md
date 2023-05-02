@@ -1129,3 +1129,24 @@ Data migration: Most data systems perform best when data is moved in bulk rather
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_de_chapter_7.pdf)**
 
 
+### Day 45
+
+**Topic:** Data Storage systems. Fundamentals of DE Chapter 7 Part 2
+
+Message and stream ingestion considerations are important for any data engineering project. Schema evolution is a common challenge when handling event data, as fields may be added or removed, or value types might change. To address this, using a schema registry for versioning schema changes is recommended. Dead letter queues are essential for holding messages that failed to process. It's also important to maintain open communication with downstream stakeholders to address any changes.
+
+Late arriving data is another consideration, as some data may occur at a certain time but arrive later. To handle this, setting up a cutoff time for late-arriving data processing is necessary. Streaming platforms are generally built out of distributed systems, which can cause complications like out-of-order message delivery and multiple deliveries. Replay, or seeking, allows readers to request a range of messages from history, which is useful when needing to re-ingest and reprocess data for a specific time range.
+
+Time to Live (TTL) is a crucial parameter determining the maximum message retention time. It is a configuration set for how long a message should live before being acknowledged and ingested. Long TTLs can cause a large backlog, while short TTLs may lead to missed messages. Make sure the platform can handle the maximum expected message size. Messages that couldn't be handled need to be sent to dead-letter queues for future analysis and diagnosis. These messages risk blocking other messages from being ingested if not sent to a dead-letter queue.
+
+There are two ways a consumer can subscribe to a topic: by pulling data (subscribers read messages from a topic and confirm when they have been processed) or by pushing data (services like Pub/Sub and RabbitMQ allow writing messages to a listener). Integrating streaming across several locations is often desirable for enhanced redundancy and consuming data close to where it is generated. Generally, the closer to data origination, the better the bandwidth and latency, but balance data egress costs.
+
+There are many ways to ingest data, such as direct database connections using ODBC (Open DataBase Connectivity) and JDBC (Java DataBase Connectivity), Change Data Capture (CDC), APIs, message queues and event-streaming platforms, managed data connectors, object storage, Electronic Data Interchange (EDI), databases and file exports, SSH (Secure Shell), SFTP (Secure File Transfer Protocol) and SCP (Secure Copy), webhooks, web scraping, and transfer appliances.
+
+Being aware of practical issues with common file formats is essential for data engineers. For instance, CSVs' default delimiter is the most common character in the English language. More robust formats include Parquet, Avro, Arrow, ORC, and JSON. The arrow file format is designed to map data directly into processing engine memory, providing high performance in data lake environments.
+
+**Content:** Fundamentals of Data Engineering
+
+**[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_de_chapter_7.pdf)**
+
+
