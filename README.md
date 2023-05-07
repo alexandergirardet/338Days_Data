@@ -1151,4 +1151,11 @@ Being aware of practical issues with common file formats is essential for data e
 
 **[Notes](https://github.com/alexandergirardet/Book_Summaries/blob/main/Notes/DE_Fundamentals/fundamentals_of_de_chapter_7.pdf)**
 
+### Day 46
+
+**Topic:** Completed a marathon
+
+Today I completed my first marathon in 4 hours and 8 minutes. It was certainly an incredibly difficult experience, but I am immensely proud to have done it. I believe it was significantly improved my mental resilience, and will certainly help towards my journey in Maths, and AI.
+
+**Content:** Personal Achievement
 
