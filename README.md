@@ -1159,3 +1159,11 @@ Today I completed my first marathon in 4 hours and 8 minutes. It was certainly a
 
 **Content:** Personal Achievement
 
+### Day 47
+
+**Topic:** Moving to London
+
+I am currently in the process of moving to London. I will update this blog shortly.
+
+**Content:** Personal Achievement
+
